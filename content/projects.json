@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "geographr",
+    "slug": "geographr",
+    "name": "geographr",
+    "summary": "Find UK boundaries, geographical lookups and rural–urban classifications.",
+    "description": "An R package for analysts working with UK geography. It provides boundary and point geometries, lookup tables and functions for common aggregation tasks.",
+    "subjects": [
+      "places"
+    ],
+    "types": [
+      "data-package"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom",
+    "maturity": "development",
+    "limitations": "Check the geography codes and boundary editions before combining datasets; the README identifies the package as work in progress.",
+    "links": {
+      "repository": "https://github.com/humaniverse/geographr",
+      "docs": "https://humaniverse.github.io/geographr/",
+      "source": "https://github.com/humaniverse/geographr/blob/main/README.md",
+      "license": "https://github.com/humaniverse/geographr/blob/main/LICENSE"
+    },
+    "keywords": [
+      "geographr",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/geographr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/geographr"
+    ]
+  },
+  {
+    "id": "demographr",
+    "slug": "demographr",
+    "name": "demographr",
+    "summary": "Find population estimates to understand the people living in a UK area.",
+    "description": "An R data package for analysts working with UK demographic data. Population estimate tables are distributed as data frames for use in your own analysis.",
+    "subjects": [
+      "people"
+    ],
+    "types": [
+      "data-package"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom",
+    "maturity": "development",
+    "limitations": "Coverage and reference years vary by dataset. Check each table’s documentation before comparing places or time periods.",
+    "links": {
+      "repository": "https://github.com/humaniverse/demographr",
+      "docs": "https://github.com/humaniverse/demographr/blob/main/README.md",
+      "source": "https://github.com/humaniverse/demographr/blob/main/README.md",
+      "license": "https://github.com/humaniverse/demographr/blob/main/LICENSE"
+    },
+    "keywords": [
+      "demographr",
+      "R"
+    ],
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/demographr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/demographr"
+    ]
+  },
+  {
+    "id": "compositr",
+    "slug": "compositr",
+    "name": "compositr",
+    "summary": "Combine indicators into composite scores and indices in R.",
+    "description": "A suite of R functions for combining and manipulating indicators. Analysts can use it to build composite scores and indices with their own data and methodological choices.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "method-toolkit"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Not geography-specific",
+    "maturity": "development",
+    "limitations": "The package is work in progress. Indicator selection, weighting and interpretation require judgment; a score does not determine humanitarian priorities.",
+    "links": {
+      "repository": "https://github.com/humaniverse/compositr",
+      "docs": "https://github.com/humaniverse/compositr/blob/main/README.md",
+      "source": "https://github.com/humaniverse/compositr/blob/main/README.md",
+      "license": "https://github.com/humaniverse/compositr/blob/main/LICENSE"
+    },
+    "keywords": [
+      "compositr",
+      "R"
+    ],
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/compositr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/compositr"
+    ]
+  },
+  {
+    "id": "humanicheck",
+    "slug": "humanicheck",
+    "name": "humanicheck",
+    "summary": "Check a dataset for missing values, duplicate rows, outliers and geometry issues.",
+    "description": "Pass a data frame or tibble to humanicheck() for a readable data quality report in your R console. It checks object size, duplicates, missing values, numerical outliers and consistency of spatial geometry types.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "method-toolkit"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Not geography-specific",
+    "maturity": "development",
+    "limitations": "These diagnostics flag possible issues. They cannot establish whether a dataset is appropriate, complete or representative for your task.",
+    "links": {
+      "repository": "https://github.com/humaniverse/humanicheck",
+      "docs": "https://github.com/humaniverse/humanicheck/blob/main/README.md",
+      "source": "https://github.com/humaniverse/humanicheck/blob/main/README.md",
+      "license": "https://github.com/humaniverse/humanicheck/blob/main/LICENSE"
+    },
+    "keywords": [
+      "humanicheck",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/humanicheck/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/humanicheck"
+    ]
+  },
+  {
+    "id": "floodvulnerability",
+    "slug": "floodvulnerability",
+    "name": "floodvulnerability",
+    "summary": "Explore neighbourhood social vulnerability to flooding across the UK.",
+    "description": "Datasets from Sayers and Partners describe neighbourhood flood vulnerability and flood disadvantage. The collection also includes SEPA flood areas for Scotland.",
+    "subjects": [
+      "risks",
+      "people",
+      "places"
+    ],
+    "types": [
+      "data-package",
+      "dataset"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom; coverage varies by dataset",
+    "maturity": "unknown",
+    "limitations": "The 2025 neighbourhood index is UK-wide. Flood disadvantage covers England and Wales (2022); Scottish flood areas are from 2024. Social vulnerability is not a forecast of a particular flood.",
+    "links": {
+      "repository": "https://github.com/humaniverse/floodvulnerability",
+      "docs": "https://github.com/humaniverse/floodvulnerability/blob/main/README.md",
+      "source": "https://github.com/humaniverse/floodvulnerability/blob/main/README.md"
+    },
+    "keywords": [
+      "floodvulnerability",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/floodvulnerability/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/floodvulnerability"
+    ],
+    "dataPeriod": "Neighbourhood vulnerability: 2025; flood disadvantage: 2022; Scottish flood areas: 2024"
+  },
+  {
+    "id": "intersectional-risks",
+    "slug": "intersectional-risks",
+    "name": "Intersectional risks",
+    "summary": "Inspect a prototype exploring overlapping dimensions of vulnerability.",
+    "description": "A research repository prototyping an intersectional vulnerability map. It makes the code and research material available for inspection.",
+    "subjects": [
+      "risks",
+      "people"
+    ],
+    "types": [
+      "research-project"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Not documented",
+    "maturity": "prototype",
+    "limitations": "The README identifies this as a prototype and does not document coverage or operational suitability. No hosted app destination is documented.",
+    "links": {
+      "repository": "https://github.com/humaniverse/intersectional-risks",
+      "docs": "https://github.com/humaniverse/intersectional-risks/blob/main/README.md",
+      "source": "https://github.com/humaniverse/intersectional-risks/blob/main/README.md",
+      "license": "https://github.com/humaniverse/intersectional-risks/blob/main/LICENSE"
+    },
+    "keywords": [
+      "intersectional-risks",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/intersectional-risks/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/intersectional-risks"
+    ]
+  },
+  {
+    "id": "build-index",
+    "slug": "build-index",
+    "name": "Vulnerability Index Builder",
+    "summary": "Turn your indicator spreadsheet into a composite vulnerability index in your browser.",
+    "description": "Upload Excel or CSV indicator data, group indicators into weighted domains and export scores, ranks and vulnerability bands. The browser app includes a guided wizard and a workspace, with an example dataset to try.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "app"
+    ],
+    "platforms": [
+      "Web browser"
+    ],
+    "coverage": "Your own area-level data",
+    "maturity": "unknown",
+    "limitations": "Prepare one row per area with matching area codes. Computation happens in your browser. Review missing values, indicator direction, weighting and sensitivity; the tool does not choose appropriate priorities for you.",
+    "links": {
+      "repository": "https://github.com/humaniverse/build-index",
+      "docs": "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "source": "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "app": "https://humaniverse.github.io/build-index/",
+      "license": "https://github.com/humaniverse/build-index/blob/main/LICENSE"
+    },
+    "keywords": [
+      "build-index",
+      "Web browser"
+    ],
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/build-index"
+    ]
+  },
+  {
+    "id": "shinycoin",
+    "slug": "shinycoin",
+    "name": "shinycoin",
+    "summary": "Build, explore and export composite indices with a guided COINr interface.",
+    "description": "A locally run Shiny app wrapping COINr’s composite index methods. It includes data screening, normalisation, weighting, aggregation, visualisation and uncertainty analysis, plus a replication script.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "app",
+      "method-toolkit"
+    ],
+    "platforms": [
+      "R",
+      "Shiny"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Your own data",
+    "maturity": "unknown",
+    "limitations": "Requires R and the shiny, COINr, ggplot2 and plotly packages. Follow the repository’s local launch instructions; no hosted app URL is documented.",
+    "links": {
+      "repository": "https://github.com/humaniverse/shinycoin",
+      "docs": "https://github.com/humaniverse/shinycoin/blob/main/README.md",
+      "source": "https://github.com/humaniverse/shinycoin/blob/main/README.md",
+      "license": "https://github.com/humaniverse/shinycoin/blob/main/LICENSE"
+    },
+    "keywords": [
+      "shinycoin",
+      "R",
+      "Shiny"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/shinycoin/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/shinycoin"
+    ]
+  },
+  {
+    "id": "IMD",
+    "slug": "imd",
+    "name": "IMD",
+    "summary": "Access deprivation indices and community needs data for all four UK nations.",
+    "description": "An R package providing Indices of Multiple Deprivation at several geographical levels, Community Needs Index files and selected household deprivation figures. A released version is available on CRAN; data downloads are linked in its README.",
+    "subjects": [
+      "people",
+      "places",
+      "risks"
+    ],
+    "types": [
+      "data-package",
+      "dataset"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom",
+    "maturity": "stable",
+    "limitations": "National deprivation indices use different methods and dates. Do not assume their scores are directly comparable. Consult the documentation for any composite UK comparisons.",
+    "links": {
+      "repository": "https://github.com/humaniverse/IMD",
+      "docs": "https://humaniverse.github.io/IMD/",
+      "source": "https://github.com/humaniverse/IMD/blob/master/README.md",
+      "license": "https://github.com/humaniverse/IMD/blob/master/LICENSE"
+    },
+    "keywords": [
+      "IMD",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/IMD/blob/master/README.md",
+      "https://api.github.com/repos/humaniverse/IMD"
+    ]
+  },
+  {
+    "id": "healthyr",
+    "slug": "healthyr",
+    "name": "healthyr",
+    "summary": "Find UK health datasets for analysis in R.",
+    "description": "An R package distributing UK health data for analysts. The repository documents installation and how the packaged datasets are maintained.",
+    "subjects": [
+      "people"
+    ],
+    "types": [
+      "data-package"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom",
+    "maturity": "development",
+    "limitations": "The README marks the project as work in progress. Check the source, period and geographical coverage of each dataset.",
+    "links": {
+      "repository": "https://github.com/humaniverse/healthyr",
+      "docs": "https://humaniverse.github.io/healthyr/",
+      "source": "https://github.com/humaniverse/healthyr/blob/main/README.md",
+      "license": "https://github.com/humaniverse/healthyr/blob/main/LICENSE"
+    },
+    "keywords": [
+      "healthyr",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/healthyr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/healthyr"
+    ]
+  },
+  {
+    "id": "asylum",
+    "slug": "asylum",
+    "name": "asylum",
+    "summary": "Access UK asylum and resettlement statistics published by the Home Office.",
+    "description": "An R package for analysing Home Office asylum and resettlement datasets, with a released version available from CRAN.",
+    "subjects": [
+      "people"
+    ],
+    "types": [
+      "data-package"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom",
+    "maturity": "stable",
+    "limitations": "The README describes a September 2023 data release. Check the packaged data and original Home Office publications before using it to describe current conditions.",
+    "links": {
+      "repository": "https://github.com/humaniverse/asylum",
+      "docs": "https://humaniverse.github.io/asylum/",
+      "source": "https://github.com/humaniverse/asylum/blob/main/README.md",
+      "license": "https://github.com/humaniverse/asylum/blob/main/LICENSE"
+    },
+    "keywords": [
+      "asylum",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/asylum/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/asylum"
+    ],
+    "dataPeriod": "September 2023 release described in the README"
+  },
+  {
+    "id": "loneliness",
+    "slug": "loneliness",
+    "name": "Loneliness index",
+    "summary": "Explore neighbourhood loneliness indicators for the four UK nations.",
+    "description": "A research project scoring and ranking neighbourhoods for loneliness. England uses a self-reported survey; Scotland, Wales and Northern Ireland use prescriptions associated with loneliness-related conditions.",
+    "subjects": [
+      "people",
+      "places",
+      "risks"
+    ],
+    "types": [
+      "research-project",
+      "dataset"
+    ],
+    "platforms": [
+      "Python",
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom",
+    "maturity": "development",
+    "limitations": "Scores are comparable within nations, not between nations. Prescribing patterns are proxies and do not measure an individual’s experience of loneliness. The project is under development.",
+    "links": {
+      "repository": "https://github.com/humaniverse/loneliness",
+      "docs": "https://github.com/humaniverse/loneliness/blob/main/README.md",
+      "source": "https://github.com/humaniverse/loneliness/blob/main/README.md",
+      "license": "https://github.com/humaniverse/loneliness/blob/main/LICENSE"
+    },
+    "keywords": [
+      "loneliness",
+      "Python",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/loneliness/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/loneliness"
+    ]
+  },
+  {
+    "id": "peralta",
+    "slug": "peralta",
+    "name": "peralta",
+    "summary": "Check whether new datasets have been published on webpages you follow.",
+    "description": "An R package that checks a list of webpage URLs for updates, helping data maintainers notice when new source material appears.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "method-toolkit"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Not geography-specific",
+    "maturity": "development",
+    "limitations": "The README identifies it as work in progress. A detected webpage change still needs review to establish what changed in the underlying data.",
+    "links": {
+      "repository": "https://github.com/humaniverse/peralta",
+      "docs": "https://github.com/humaniverse/peralta/blob/main/README.md",
+      "source": "https://github.com/humaniverse/peralta/blob/main/README.md",
+      "license": "https://github.com/humaniverse/peralta/blob/main/LICENSE"
+    },
+    "keywords": [
+      "peralta",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/peralta/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/peralta"
+    ]
+  },
+  {
+    "id": "wildfires",
+    "slug": "wildfires",
+    "name": "wildfires",
+    "summary": "Explore how wildfire risk and social vulnerability overlap across the UK.",
+    "description": "An R package providing social vulnerability indicators and modelled spring and summer wildfire risk at MSOA level or national equivalents.",
+    "subjects": [
+      "risks",
+      "people",
+      "places"
+    ],
+    "types": [
+      "data-package"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom",
+    "maturity": "stable",
+    "limitations": "Risk and vulnerability scores are standardised separately within each UK nation. They are analytical estimates, not live incident forecasts or evidence of individual vulnerability.",
+    "links": {
+      "repository": "https://github.com/humaniverse/wildfires",
+      "docs": "https://github.com/humaniverse/wildfires/blob/main/README.md",
+      "source": "https://github.com/humaniverse/wildfires/blob/main/README.md",
+      "license": "https://github.com/humaniverse/wildfires/blob/main/LICENSE.md"
+    },
+    "keywords": [
+      "wildfires",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/wildfires/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/wildfires"
+    ]
+  },
+  {
+    "id": "broadcast",
+    "slug": "broadcast",
+    "name": "broadcast",
+    "summary": "Make the datasets in an R package available as CSV files.",
+    "description": "An R utility for package maintainers. It converts .rda data files into CSV files so that people can use the data outside R.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "method-toolkit"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Not geography-specific",
+    "maturity": "development",
+    "limitations": "Requires an R package containing data files. Check the underlying data’s reuse terms before publishing the exported CSVs.",
+    "links": {
+      "repository": "https://github.com/humaniverse/broadcast",
+      "docs": "https://github.com/humaniverse/broadcast/blob/main/README.md",
+      "source": "https://github.com/humaniverse/broadcast/blob/main/README.md",
+      "license": "https://github.com/humaniverse/broadcast/blob/main/LICENSE"
+    },
+    "keywords": [
+      "broadcast",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/broadcast/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/broadcast"
+    ]
+  },
+  {
+    "id": "hiedata",
+    "slug": "hiedata",
+    "name": "Health Inequalities Explorer data",
+    "summary": "Inspect the datasets used in the Health Inequalities Explorer.",
+    "description": "A repository containing datasets used in the Health Inequalities Explorer. It provides access to the source files rather than a documented hosted explorer.",
+    "subjects": [
+      "people"
+    ],
+    "types": [
+      "dataset"
+    ],
+    "platforms": [
+      "Data files"
+    ],
+    "coverage": "Not documented",
+    "maturity": "unknown",
+    "limitations": "The README does not describe geographical coverage, periods or individual data definitions. Review the files and their provenance before use.",
+    "links": {
+      "repository": "https://github.com/humaniverse/hiedata",
+      "docs": "https://github.com/humaniverse/hiedata/blob/main/README.md",
+      "source": "https://github.com/humaniverse/hiedata/blob/main/README.md",
+      "license": "https://github.com/humaniverse/hiedata/blob/main/LICENSE"
+    },
+    "keywords": [
+      "hiedata",
+      "Data files"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/hiedata/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/hiedata"
+    ]
+  },
+  {
+    "id": "compare-risk-maps",
+    "slug": "compare-risk-maps",
+    "name": "Compare risk maps",
+    "summary": "Compare overlaps between disaster risk, resilience and vulnerability maps.",
+    "description": "A Shiny app for comparing the overlaps and differences between maps, including flooding, heatwaves, deprivation and social fabric.",
+    "subjects": [
+      "risks",
+      "places"
+    ],
+    "types": [
+      "app"
+    ],
+    "platforms": [
+      "Web browser",
+      "R / Shiny for local use"
+    ],
+    "coverage": "Not documented",
+    "maturity": "unknown",
+    "limitations": "Check the app’s source datasets and geographical coverage. Overlapping map classifications do not establish causes or automatically identify priorities.",
+    "links": {
+      "repository": "https://github.com/humaniverse/compare-risk-maps",
+      "docs": "https://github.com/humaniverse/compare-risk-maps/blob/main/README.md",
+      "source": "https://github.com/humaniverse/compare-risk-maps/blob/main/README.md",
+      "app": "https://matthewgthomas.shinyapps.io/compare-risk-maps/",
+      "license": "https://github.com/humaniverse/compare-risk-maps/blob/main/LICENSE"
+    },
+    "keywords": [
+      "compare-risk-maps",
+      "Web browser",
+      "R / Shiny for local use"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/compare-risk-maps/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/compare-risk-maps"
+    ]
+  },
+  {
+    "id": "heat-disadvantage",
+    "slug": "heat-disadvantage",
+    "name": "Heat disadvantage",
+    "summary": "Explore heat vulnerability and disadvantage datasets for Great Britain.",
+    "description": "Heat disadvantage datasets combine heat exposure and social vulnerability. England and Wales use Climate Just indices; Scotland uses 4 Earth Intelligence heat hazard and deprivation data.",
+    "subjects": [
+      "risks",
+      "people",
+      "places"
+    ],
+    "types": [
+      "dataset"
+    ],
+    "platforms": [
+      "Data files"
+    ],
+    "coverage": "England, Wales and Scotland",
+    "maturity": "unknown",
+    "limitations": "Methods differ between Scotland and England/Wales, and classifications are calculated separately by nation. Northern Ireland data are not included. See the README for baseline and warming scenarios.",
+    "links": {
+      "repository": "https://github.com/humaniverse/heat-disadvantage",
+      "docs": "https://github.com/humaniverse/heat-disadvantage/blob/main/README.md",
+      "source": "https://github.com/humaniverse/heat-disadvantage/blob/main/README.md"
+    },
+    "keywords": [
+      "heat-disadvantage",
+      "Data files"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/heat-disadvantage/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/heat-disadvantage"
+    ],
+    "dataPeriod": "England/Wales: 2022 Climate Just indices; baseline and 1.5°C scenarios"
+  },
+  {
+    "id": "DEPAHRI",
+    "slug": "depahri",
+    "name": "DEPAHRI",
+    "summary": "Examine physical and digital barriers to accessing healthcare.",
+    "description": "The Digital Exclusion and Physical Access to Healthcare Risk Index combines demography, deprivation, digital connectivity and physical access to healthcare.",
+    "subjects": [
+      "people",
+      "places",
+      "risks"
+    ],
+    "types": [
+      "data-package",
+      "dataset"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "England, Wales and Scotland",
+    "maturity": "development",
+    "limitations": "Each of four components is equally weighted. Higher scores indicate greater exclusion risk; an area score is not a measure of an individual’s access. The package’s reuse license is not yet specified.",
+    "links": {
+      "repository": "https://github.com/humaniverse/DEPAHRI",
+      "docs": "https://github.com/humaniverse/DEPAHRI/blob/main/README.md",
+      "source": "https://github.com/humaniverse/DEPAHRI/blob/main/README.md"
+    },
+    "keywords": [
+      "DEPAHRI",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/DEPAHRI/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/DEPAHRI"
+    ]
+  },
+  {
+    "id": "specr",
+    "slug": "specr",
+    "name": "specr (Humaniverse fork)",
+    "summary": "Inspect how analytical choices affect statistical results using specification curves.",
+    "description": "Humaniverse’s fork of the specr R package. The upstream project provides tools to set up, run and visualise specification curve analyses; its documentation is linked here.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "method-toolkit"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Not geography-specific",
+    "maturity": "unknown",
+    "limitations": "The upstream package documents a stable lifecycle; this fork’s maturity is not separately documented. Specification curves show sensitivity to analytical choices and do not make an estimate more valid or generalisable.",
+    "links": {
+      "repository": "https://github.com/humaniverse/specr",
+      "docs": "https://masurp.github.io/specr",
+      "source": "https://github.com/humaniverse/specr/blob/master/README.md",
+      "license": "https://github.com/humaniverse/specr/blob/master/LICENSE.md"
+    },
+    "keywords": [
+      "specr",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/specr/blob/master/README.md",
+      "https://api.github.com/repos/humaniverse/specr"
+    ]
+  },
+  {
+    "id": "globalvuln",
+    "slug": "globalvuln",
+    "name": "globalvuln",
+    "summary": "Compare global vulnerability indices and access country-level data in R.",
+    "description": "An R data package and browser explorer bringing together published indices of vulnerability, fragility, development, hunger, health and displacement. The explorer helps compare concepts, coverage and sources.",
+    "subjects": [
+      "risks",
+      "people",
+      "places"
+    ],
+    "types": [
+      "app",
+      "data-package"
+    ],
+    "platforms": [
+      "Web browser",
+      "R for the data package"
+    ],
+    "coverage": "Global; country-level coverage varies by index",
+    "maturity": "development",
+    "limitations": "Original publisher scores retain their scales. No cross-index meta-score is produced; missing coverage must not be read as low vulnerability. Reference periods and reuse terms differ by publisher.",
+    "links": {
+      "repository": "https://github.com/humaniverse/globalvuln",
+      "docs": "https://humaniverse.github.io/globalvuln/",
+      "source": "https://github.com/humaniverse/globalvuln/blob/main/README.md",
+      "app": "https://humaniverse.github.io/globalvuln/indices-explorer.html",
+      "license": "https://github.com/humaniverse/globalvuln/blob/main/LICENSE"
+    },
+    "keywords": [
+      "globalvuln",
+      "Web browser",
+      "R for the data package"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/globalvuln/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/globalvuln"
+    ]
+  },
+  {
+    "id": "anticipatory-analysis-guide",
+    "slug": "anticipatory-analysis-guide",
+    "name": "Anticipatory analysis field guide",
+    "summary": "Learn and facilitate anticipatory humanitarian analysis.",
+    "description": "An interactive field guide with lessons, a working session and workshop facilitation material. It is based on a method developed by Madeleine Lyons and Barbara Devlieger.",
+    "subjects": [
+      "methods",
+      "risks"
+    ],
+    "types": [
+      "app",
+      "method-toolkit"
+    ],
+    "platforms": [
+      "Web browser"
+    ],
+    "coverage": "Not geography-specific",
+    "maturity": "unknown",
+    "limitations": "Working sessions are stored in your browser; export backups to keep your work. Fictional examples are learning material. The guide supports discussion and does not select priorities automatically.",
+    "links": {
+      "repository": "https://github.com/humaniverse/anticipatory-analysis-guide",
+      "docs": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "source": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "app": "https://humaniverse.github.io/anticipatory-analysis-guide/"
+    },
+    "keywords": [
+      "anticipatory-analysis-guide",
+      "Web browser"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/anticipatory-analysis-guide"
+    ]
+  },
+  {
+    "id": "healthindexwales",
+    "slug": "healthindexwales",
+    "name": "Health Index for Wales",
+    "summary": "Inspect work towards a health index for Welsh local authorities.",
+    "description": "A work in progress project based on the Office for National Statistics Health Index, with healthy people, healthy lives and healthy places domains.",
+    "subjects": [
+      "people",
+      "places"
+    ],
+    "types": [
+      "research-project"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Wales",
+    "maturity": "development",
+    "limitations": "The README says data collection was paused awaiting a new StatsWales API. A restart is not confirmed in the README; all data and outputs require careful review.",
+    "links": {
+      "repository": "https://github.com/humaniverse/healthindexwales",
+      "docs": "https://github.com/humaniverse/healthindexwales/blob/main/README.md",
+      "source": "https://github.com/humaniverse/healthindexwales/blob/main/README.md",
+      "license": "https://github.com/humaniverse/healthindexwales/blob/main/LICENSE"
+    },
+    "keywords": [
+      "healthindexwales",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/healthindexwales/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/healthindexwales"
+    ]
+  },
+  {
+    "id": "deprivation-explorer",
+    "slug": "deprivation-explorer",
+    "name": "Deprivation Explorer",
+    "summary": "Explore the UK’s indices of multiple deprivation in your browser.",
+    "description": "A Shiny app for exploring the UK’s indices of multiple deprivation. Its source repository is available alongside the hosted app.",
+    "subjects": [
+      "people",
+      "places",
+      "risks"
+    ],
+    "types": [
+      "app"
+    ],
+    "platforms": [
+      "Web browser",
+      "R / Shiny for local use"
+    ],
+    "coverage": "United Kingdom",
+    "maturity": "unknown",
+    "limitations": "Check the edition, national methodology and geography shown in the app. Scores from separate national indices are not automatically comparable.",
+    "links": {
+      "repository": "https://github.com/humaniverse/deprivation-explorer",
+      "docs": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+      "source": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+      "app": "https://matthewgthomas.shinyapps.io/deprivation-explorer/",
+      "license": "https://github.com/humaniverse/deprivation-explorer/blob/main/LICENSE"
+    },
+    "keywords": [
+      "deprivation-explorer",
+      "Web browser",
+      "R / Shiny for local use"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/deprivation-explorer"
+    ]
+  },
+  {
+    "id": "healthindexscotland",
+    "slug": "healthindexscotland",
+    "name": "Health Index Scotland",
+    "summary": "Inspect indicators and methods for a Scottish health index.",
+    "description": "A work in progress project to build a Scottish Health Index using the indicators and methodology of England’s Health Index. The README includes indicator metadata and source links.",
+    "subjects": [
+      "people",
+      "places"
+    ],
+    "types": [
+      "research-project",
+      "data-package"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Scotland",
+    "maturity": "development",
+    "limitations": "The project is still in development. Reference years and source licenses differ by indicator; do not treat the collection as a reviewed current operational index.",
+    "links": {
+      "repository": "https://github.com/humaniverse/healthindexscotland",
+      "docs": "https://github.com/humaniverse/healthindexscotland/blob/main/README.md",
+      "source": "https://github.com/humaniverse/healthindexscotland/blob/main/README.md",
+      "license": "https://github.com/humaniverse/healthindexscotland/blob/main/LICENSE"
+    },
+    "keywords": [
+      "healthindexscotland",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/healthindexscotland/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/healthindexscotland"
+    ]
+  },
+  {
+    "id": "healthindexni",
+    "slug": "healthindexni",
+    "name": "Northern Ireland health indicators",
+    "summary": "Inspect health inequality indicators collected for Northern Ireland.",
+    "description": "A development repository collecting health inequality indicators. Its metadata documents topics including smoking, school attendance, alcohol misuse and cardiovascular conditions.",
+    "subjects": [
+      "people",
+      "places"
+    ],
+    "types": [
+      "research-project",
+      "data-package"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Northern Ireland",
+    "maturity": "development",
+    "limitations": "The package description is unfinished and several indicators are unavailable. Consult the metadata for source years, definitions and licensing; this is not a complete, reviewed health index.",
+    "links": {
+      "repository": "https://github.com/humaniverse/healthindexni",
+      "docs": "https://github.com/humaniverse/healthindexni/blob/main/README.md",
+      "source": "https://github.com/humaniverse/healthindexni/blob/main/README.md",
+      "license": "https://github.com/humaniverse/healthindexni/blob/main/LICENSE"
+    },
+    "keywords": [
+      "healthindexni",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/healthindexni/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/healthindexni",
+      "https://github.com/humaniverse/healthindexni/blob/main/metadata.md"
+    ]
+  },
+  {
+    "id": "fermi",
+    "slug": "fermi",
+    "name": "fermi",
+    "summary": "Make probabilistic estimates by breaking a question into smaller uncertain quantities.",
+    "description": "An R package for Fermi estimation. Analysts define assumptions for component quantities and use Monte Carlo simulation to examine the distribution of possible outcomes.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "method-toolkit"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Not geography-specific",
+    "maturity": "development",
+    "limitations": "Results depend on your assumptions and the way the components combine. They are estimates with uncertainty, not observed totals or forecasts guaranteed by the package.",
+    "links": {
+      "repository": "https://github.com/humaniverse/fermi",
+      "docs": "https://humaniverse.github.io/fermi/",
+      "source": "https://github.com/humaniverse/fermi/blob/master/README.md",
+      "license": "https://github.com/humaniverse/fermi/blob/master/LICENSE"
+    },
+    "keywords": [
+      "fermi",
+      "R"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/fermi/blob/master/README.md",
+      "https://api.github.com/repos/humaniverse/fermi"
+    ]
+  },
+  {
+    "id": "shinyspecr",
+    "slug": "shinyspecr",
+    "name": "shinyspecr",
+    "summary": "Interactively examine specification curves and the models behind them.",
+    "description": "An R package opening a Shiny explorer for a specr analysis. It includes a specification curve, model tables, distributions and summaries of analytical choices.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "app",
+      "method-toolkit"
+    ],
+    "platforms": [
+      "R",
+      "Shiny",
+      "specr"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "Not geography-specific",
+    "maturity": "development",
+    "limitations": "Requires R and a specr result object; supplying the original dataset enables model refitting. No hosted app destination is documented. Follow the repository’s installation instructions.",
+    "links": {
+      "repository": "https://github.com/humaniverse/shinyspecr",
+      "docs": "https://github.com/humaniverse/shinyspecr/blob/main/README.md",
+      "source": "https://github.com/humaniverse/shinyspecr/blob/main/README.md",
+      "license": "https://github.com/humaniverse/shinyspecr/blob/main/LICENSE"
+    },
+    "keywords": [
+      "shinyspecr",
+      "R",
+      "Shiny",
+      "specr"
+    ],
+    "featured": false,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/shinyspecr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/shinyspecr"
+    ]
+  }
+]

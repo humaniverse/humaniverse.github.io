@@ -1,0 +1,420 @@
+{
+  "reviewedAt": "2026-11-01",
+  "source": "GitHub public repository search: org:humaniverse is:public (30 results; one page of 100)",
+  "repositories": [
+    {
+      "repository": "humaniverse/geographr",
+      "url": "https://github.com/humaniverse/geographr",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/geographr/blob/main/README.md",
+        "sha": "1e9b844d2f5cb1084ac948220c4a06a0915c8ddd"
+      },
+      "description": "R package for mapping UK geographies",
+      "homepage": "https://humaniverse.github.io/geographr/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/IMD",
+      "url": "https://github.com/humaniverse/IMD",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/IMD/blob/master/README.md",
+        "sha": "fc5b3c316fd6433174057fe4eb33abed08d7751c"
+      },
+      "description": "R package for working with Index of Multiple Deprivation data for all four UK nations",
+      "homepage": "https://humaniverse.github.io/IMD/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/healthyr",
+      "url": "https://github.com/humaniverse/healthyr",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/healthyr/blob/main/README.md",
+        "sha": "e8d401cb5545ebf2b5492eb77188714a27ea0592"
+      },
+      "description": "R package distributing UK health data",
+      "homepage": "https://humaniverse.github.io/healthyr/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/asylum",
+      "url": "https://github.com/humaniverse/asylum",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/asylum/blob/main/README.md",
+        "sha": "ed64b756ce07e5d8cb26a8b8bbee25a76ef34b82"
+      },
+      "description": "R package to access UK asylum and resettlement datasets",
+      "homepage": "https://humaniverse.github.io/asylum/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/humanicheck",
+      "url": "https://github.com/humaniverse/humanicheck",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/humanicheck/blob/main/README.md",
+        "sha": "c280a38aae8a1068cfc3d760672361875baf84fe"
+      },
+      "description": "Helper package to check data being outputted by humaniverse packages meets expectations",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/demographr",
+      "url": "https://github.com/humaniverse/demographr",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/demographr/blob/main/README.md",
+        "sha": "a49dadd1521a2fe6f068d9f3eb4f02cd102742aa"
+      },
+      "description": "R package for distributing UK demographic data",
+      "homepage": "",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/loneliness",
+      "url": "https://github.com/humaniverse/loneliness",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/loneliness/blob/main/README.md",
+        "sha": "fcc0de43cb09113af3acd4eb33ebd28ea128a8cb"
+      },
+      "description": "A loneliness prescription index for the UK",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/peralta",
+      "url": "https://github.com/humaniverse/peralta",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/peralta/blob/main/README.md",
+        "sha": "8c6542762cc6065086cadb0eac22a0284a64c953"
+      },
+      "description": "Check for new datasets on the web",
+      "homepage": "",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/wildfires",
+      "url": "https://github.com/humaniverse/wildfires",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/wildfires/blob/main/README.md",
+        "sha": "3e93b57d68efd3e6aa9f89f562e0167f399a8389"
+      },
+      "description": "A risk and resilience map for wildfires in the UK",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/broadcast",
+      "url": "https://github.com/humaniverse/broadcast",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/broadcast/blob/main/README.md",
+        "sha": "58e3a7e81f181c29bd7d363c5b5315e024cc8f4f"
+      },
+      "description": "Broadcast data from your R package to the world",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/compositr",
+      "url": "https://github.com/humaniverse/compositr",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/compositr/blob/main/README.md",
+        "sha": "9e3fff951493049f06d82e2824f5fb010ee4eaaf"
+      },
+      "description": "R package to build composite scores and indices",
+      "homepage": "",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/intersectional-risks",
+      "url": "https://github.com/humaniverse/intersectional-risks",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/intersectional-risks/blob/main/README.md",
+        "sha": "d3837cac8ebf824142eeddc465257132b8509f62"
+      },
+      "description": "Prototyping an intersectional vulnerability map",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/humaniverse.github.io",
+      "url": "https://github.com/humaniverse/humaniverse.github.io",
+      "reviewedAt": "2026-11-01",
+      "readme": null,
+      "description": null,
+      "homepage": null,
+      "fork": false,
+      "disposition": "excluded",
+      "reason": "Website infrastructure; this catalogue itself."
+    },
+    {
+      "repository": "humaniverse/shinycoin",
+      "url": "https://github.com/humaniverse/shinycoin",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/shinycoin/blob/main/README.md",
+        "sha": "cfb731edb7813bc5152944ae39f1553dc410c93d"
+      },
+      "description": "Shiny app for building composite indices with the COINr package",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/humaniverse.r-universe.dev",
+      "url": "https://github.com/humaniverse/humaniverse.r-universe.dev",
+      "reviewedAt": "2026-11-01",
+      "readme": null,
+      "description": null,
+      "homepage": null,
+      "fork": false,
+      "disposition": "excluded",
+      "reason": "R Universe build configuration; the package service is linked from About."
+    },
+    {
+      "repository": "humaniverse/compare-risk-maps",
+      "url": "https://github.com/humaniverse/compare-risk-maps",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/compare-risk-maps/blob/main/README.md",
+        "sha": "6b374e2d5a6f36a1eb3cfa9c0057d79cb3864af2"
+      },
+      "description": "Shiny app comparing the overlaps and differences between various disaster risk/resilience/vulnerability maps, such as flooding, heatwaves, deprivation, social fabric",
+      "homepage": "https://matthewgthomas.shinyapps.io/compare-risk-maps/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/heat-disadvantage",
+      "url": "https://github.com/humaniverse/heat-disadvantage",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/heat-disadvantage/blob/main/README.md",
+        "sha": "1ae946f13730d0351ddcb966b9574736edc175e3"
+      },
+      "description": null,
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/floodvulnerability",
+      "url": "https://github.com/humaniverse/floodvulnerability",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/floodvulnerability/blob/main/README.md",
+        "sha": "1b17ced2daf762f2f61ba5cdfde3b93d95b4b6b8"
+      },
+      "description": "Flood vulnerability index from Sayers and Partners",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/build-index",
+      "url": "https://github.com/humaniverse/build-index",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/build-index/blob/main/README.md",
+        "sha": "ba593256ae841a7fc05ba57ae1438ed24610e6a6"
+      },
+      "description": "Turn your indicator data into a vulnerability index",
+      "homepage": "http://humaniverse.github.io/build-index/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/hiedata",
+      "url": "https://github.com/humaniverse/hiedata",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/hiedata/blob/main/README.md",
+        "sha": "e30c53a795173bb143de582717d5d077230f79c7"
+      },
+      "description": null,
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/DEPAHRI",
+      "url": "https://github.com/humaniverse/DEPAHRI",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/DEPAHRI/blob/main/README.md",
+        "sha": "405663085c267084fbfad068e3863e98379daf33"
+      },
+      "description": "Digital Exclusion and Physical Access to Healthcare Risk Index",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/specr",
+      "url": "https://github.com/humaniverse/specr",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/specr/blob/master/README.md",
+        "sha": "6ec19cd3d0b0c91f4e1b9e1e058977cbf05d94f2"
+      },
+      "description": "Conducting and Visualizing Specification Curve Analyses",
+      "homepage": "https://masurp.github.io/specr",
+      "fork": true,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/globalvuln",
+      "url": "https://github.com/humaniverse/globalvuln",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/globalvuln/blob/main/README.md",
+        "sha": "0db0ef806a1e2a73921718836ee8198b1bc3655c"
+      },
+      "description": "Global Humanitarian Vulnerability Indices",
+      "homepage": "http://humaniverse.github.io/globalvuln/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/anticipatory-analysis-guide",
+      "url": "https://github.com/humaniverse/anticipatory-analysis-guide",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+        "sha": "6dcfb01502cf47906d9f1d637cb4a6c3b57d1d04"
+      },
+      "description": "An interactive guide to anticipatory analysis.",
+      "homepage": "http://humaniverse.github.io/anticipatory-analysis-guide/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/healthindexwales",
+      "url": "https://github.com/humaniverse/healthindexwales",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/healthindexwales/blob/main/README.md",
+        "sha": "2e27ebe08293066c45efb899a5351140ab9edaa0"
+      },
+      "description": "A version of the ONS Health Index, covering Local Authorities in Wales.",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/deprivation-explorer",
+      "url": "https://github.com/humaniverse/deprivation-explorer",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+        "sha": "aa1ee59887c4716842b8e170833fe850ced5a27a"
+      },
+      "description": "Explore the UK's indices of multiple deprivation",
+      "homepage": "https://matthewgthomas.shinyapps.io/deprivation-explorer/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/healthindexscotland",
+      "url": "https://github.com/humaniverse/healthindexscotland",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/healthindexscotland/blob/main/README.md",
+        "sha": "b61651dccbc47599ed6c3b4d4d20d5ff488a439b"
+      },
+      "description": null,
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/healthindexni",
+      "url": "https://github.com/humaniverse/healthindexni",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/healthindexni/blob/main/README.md",
+        "sha": "c0cc9312a5e7b64f0874a0ed460d48a030dbd7a3"
+      },
+      "description": null,
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/fermi",
+      "url": "https://github.com/humaniverse/fermi",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/fermi/blob/master/README.md",
+        "sha": "b8bc92b883ec9e7ae026781d99e549291317dfab"
+      },
+      "description": "Bayesian Fermi estimation in R",
+      "homepage": "https://humaniverse.github.io/fermi/",
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    },
+    {
+      "repository": "humaniverse/shinyspecr",
+      "url": "https://github.com/humaniverse/shinyspecr",
+      "reviewedAt": "2026-11-01",
+      "readme": {
+        "url": "https://github.com/humaniverse/shinyspecr/blob/main/README.md",
+        "sha": "1d488adbb9e9380dab943fe1a2344a99bf10738c"
+      },
+      "description": "R Shiny explorer for specification curve analyses in specr",
+      "homepage": null,
+      "fork": false,
+      "disposition": "included",
+      "reason": "Public user-facing resource; one canonical catalogue record, including any related app."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "understand-a-place",
+    "slug": "understand-a-place",
+    "title": "Understand a place",
+    "summary": "Find UK population estimates, boundaries and geographical lookups.",
+    "scope": "This guide focuses on the United Kingdom. Both suggested resources require R and are under development. Check each dataset’s geography and reference year.",
+    "projectRecommendations": [
+      {
+        "projectId": "demographr",
+        "explanation": "Start with population estimates to describe who lives in an area and put counts into context.",
+        "usageNotes": "Choose the population table and reference year relevant to your question. Check whether you need a count, proportion or rate."
+      },
+      {
+        "projectId": "geographr",
+        "explanation": "Find boundaries and lookups to locate an area and understand how it relates to other UK geographies.",
+        "usageNotes": "Match geography codes and boundary editions. A lookup does not guarantee that differently dated data can be combined without further work."
+      }
+    ],
+    "guidance": "Use population and geographical context together only after checking the units and dates. These packages provide ingredients for analysis; they do not provide a complete assessment of a community’s needs.",
+    "relatedCatalogueQuery": "subject=people&subject=places",
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/demographr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/demographr",
+      "https://github.com/humaniverse/geographr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/geographr"
+    ]
+  },
+  {
+    "id": "explore-vulnerability",
+    "slug": "explore-vulnerability",
+    "title": "Explore vulnerability",
+    "summary": "Explore UK neighbourhood vulnerability, deprivation and geographical context.",
+    "scope": "This guide focuses on UK data. The suggested resources require R; national coverage, methods and reference periods vary. Area-level measures cannot describe every person’s circumstances.",
+    "projectRecommendations": [
+      {
+        "projectId": "floodvulnerability",
+        "explanation": "Examine the social conditions that can make a neighbourhood more vulnerable if flooding occurs.",
+        "usageNotes": "The 2025 neighbourhood index covers the UK. Other flood datasets have different coverage and dates. Social vulnerability and hazard exposure answer different questions."
+      },
+      {
+        "projectId": "IMD",
+        "explanation": "Add context about deprivation and community needs using the indices appropriate to each UK nation.",
+        "usageNotes": "Check the index edition and geographical level. National deprivation scores are not directly interchangeable."
+      },
+      {
+        "projectId": "geographr",
+        "explanation": "Find the boundaries and lookup tables needed to understand the geographical units in the vulnerability data.",
+        "usageNotes": "Check that codes and boundary vintages match before joining. The package is under development."
+      }
+    ],
+    "guidance": "Read the source methodology before comparing places. Use these indicators to ask better questions alongside local knowledge, rather than treating a map or rank as a complete statement of need. These resources are suggestions, not a pre-connected analytical pipeline.",
+    "relatedCatalogueQuery": "subject=risks",
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/floodvulnerability/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/floodvulnerability",
+      "https://github.com/humaniverse/IMD/blob/master/README.md",
+      "https://api.github.com/repos/humaniverse/IMD",
+      "https://github.com/humaniverse/geographr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/geographr"
+    ]
+  },
+  {
+    "id": "build-an-index",
+    "slug": "build-an-index",
+    "title": "Build an index",
+    "summary": "Check your data and combine indicators into a composite index.",
+    "scope": "Use your own indicator data. The browser builder works without R; humanicheck and compositr require R. Selecting indicators, weighting them and interpreting results all require judgment.",
+    "projectRecommendations": [
+      {
+        "projectId": "humanicheck",
+        "explanation": "Inspect your input data for missing values, duplicates and possible outliers before deciding how to use it.",
+        "usageNotes": "Pass an R data frame or tibble to the checking function. Review each flag in context; the report does not certify data suitability."
+      },
+      {
+        "projectId": "compositr",
+        "explanation": "Build composite scores in R when you want to write and review your own analytical method.",
+        "usageNotes": "Bring your own indicators and explicit methodological choices. The package is under development."
+      },
+      {
+        "projectId": "build-index",
+        "explanation": "Use a browser interface to group spreadsheet indicators into weighted domains and export scores and a methodology record.",
+        "usageNotes": "Supply Excel or CSV data with one row per area and matching area codes. Review indicator direction, missing values and weighting choices."
+      }
+    ],
+    "guidance": "Choose a clearly defined question and explain why each indicator belongs. Review how choices about scales, missing data and weights affect results. The R tools and browser builder offer different ways to work; compatibility between their outputs is not guaranteed. No index chooses the right humanitarian priorities for you.",
+    "relatedCatalogueQuery": "subject=methods",
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/humanicheck/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/humanicheck",
+      "https://github.com/humaniverse/compositr/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/compositr",
+      "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/build-index"
+    ]
+  }
+]

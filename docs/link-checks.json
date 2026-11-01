@@ -1,0 +1,582 @@
+{
+  "checkedAt": "2026-11-01T18:08:54.344Z",
+  "note": "HTTP checks verify destinations, not app calculations or content freshness. Non-200 responses require manual review; never remove a record on one failed request.",
+  "results": [
+    {
+      "url": "https://github.com/humaniverse/anticipatory-analysis-guide",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/anticipatory-analysis-guide",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/anticipatory-analysis-guide/",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/anticipatory-analysis-guide/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/asylum",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/asylum",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/asylum/",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/asylum/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/asylum/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/asylum/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/asylum/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/asylum/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/broadcast",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/broadcast",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/broadcast/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/broadcast/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/broadcast/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/broadcast/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/compare-risk-maps",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/compare-risk-maps",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/compare-risk-maps/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/compare-risk-maps/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://matthewgthomas.shinyapps.io/compare-risk-maps/",
+      "httpStatus": 200,
+      "finalURL": "https://matthewgthomas.shinyapps.io/compare-risk-maps/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/compare-risk-maps/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/compare-risk-maps/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/compositr",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/compositr",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/compositr/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/compositr/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/compositr/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/compositr/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/demographr",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/demographr",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/demographr/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/demographr/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/demographr/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/demographr/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/DEPAHRI",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/DEPAHRI",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/DEPAHRI/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/DEPAHRI/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/deprivation-explorer",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/deprivation-explorer",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://matthewgthomas.shinyapps.io/deprivation-explorer/",
+      "httpStatus": 200,
+      "finalURL": "https://matthewgthomas.shinyapps.io/deprivation-explorer/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/deprivation-explorer/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/deprivation-explorer/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/fermi",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/fermi",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/fermi/",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/fermi/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/fermi/blob/master/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/fermi/blob/master/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/fermi/blob/master/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/fermi/blob/master/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/floodvulnerability",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/floodvulnerability",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/floodvulnerability/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/floodvulnerability/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/geographr",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/geographr",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/geographr/",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/geographr/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/geographr/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/geographr/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/geographr/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/geographr/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/globalvuln",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/globalvuln",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/globalvuln/",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/globalvuln/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/globalvuln/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/globalvuln/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/globalvuln/indices-explorer.html",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/globalvuln/indices-explorer.html",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/globalvuln/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/globalvuln/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexwales",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexwales",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexwales/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexwales/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexwales/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexwales/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexscotland",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexscotland",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexscotland/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexscotland/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexscotland/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexscotland/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/hiedata",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/hiedata",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/hiedata/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/hiedata/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/hiedata/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/hiedata/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthyr",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthyr",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/healthyr/",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/healthyr/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthyr/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthyr/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthyr/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthyr/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/heat-disadvantage",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/heat-disadvantage",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/heat-disadvantage/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/heat-disadvantage/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/humanicheck",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/humanicheck",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/humanicheck/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/humanicheck/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/humanicheck/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/humanicheck/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/IMD",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/IMD",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/IMD/",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/IMD/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/IMD/blob/master/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/IMD/blob/master/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/IMD/blob/master/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/IMD/blob/master/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/intersectional-risks",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/intersectional-risks",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/intersectional-risks/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/intersectional-risks/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/intersectional-risks/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/intersectional-risks/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/loneliness",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/loneliness",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/loneliness/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/loneliness/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/loneliness/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/loneliness/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexni",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexni",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexni/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexni/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/healthindexni/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/healthindexni/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/peralta",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/peralta",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/peralta/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/peralta/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/peralta/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/peralta/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/shinycoin",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/shinycoin",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/shinycoin/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/shinycoin/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/shinycoin/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/shinycoin/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/shinyspecr",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/shinyspecr",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/shinyspecr/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/shinyspecr/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/shinyspecr/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/shinyspecr/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/specr",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/specr",
+      "result": "passed"
+    },
+    {
+      "url": "https://masurp.github.io/specr",
+      "httpStatus": 200,
+      "finalURL": "https://masurp.github.io/specr/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/specr/blob/master/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/specr/blob/master/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/specr/blob/master/LICENSE.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/specr/blob/master/LICENSE.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/build-index",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/build-index",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.github.io/build-index/",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.github.io/build-index/",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/build-index/blob/main/LICENSE",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/build-index/blob/main/LICENSE",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/wildfires",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/wildfires",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/wildfires/blob/main/README.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/wildfires/blob/main/README.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/wildfires/blob/main/LICENSE.md",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/wildfires/blob/main/LICENSE.md",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/humaniverse.github.io",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/humaniverse.github.io",
+      "result": "passed"
+    },
+    {
+      "url": "https://github.com/humaniverse/humaniverse.github.io/issues",
+      "httpStatus": 200,
+      "finalURL": "https://github.com/humaniverse/humaniverse.github.io/issues",
+      "result": "passed"
+    },
+    {
+      "url": "https://humaniverse.r-universe.dev/packages",
+      "httpStatus": 200,
+      "finalURL": "https://humaniverse.r-universe.dev/packages",
+      "result": "passed"
+    }
+  ]
+}
