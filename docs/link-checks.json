@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-01T18:08:54.344Z",
-  "note": "HTTP checks verify destinations, not app calculations or content freshness. Non-200 responses require manual review; never remove a record on one failed request.",
+  "checkedAt": "2026-11-01T19:13:13+00:00",
+  "note": "HTTP checks verify destinations, not app calculations or content freshness. Non-200 responses require manual review; never remove a record on one failed request. Two Shiny app destinations timed out during HEAD checks and returned HTTP 200 on targeted GET retries; these are annotated individually.",
   "results": [
     {
       "url": "https://github.com/humaniverse/anticipatory-analysis-guide",
@@ -17,7 +17,7 @@
     {
       "url": "https://humaniverse.github.io/anticipatory-analysis-guide/",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/anticipatory-analysis-guide/",
+      "finalURL": "http://humaniverse.org/anticipatory-analysis-guide/",
       "result": "passed"
     },
     {
@@ -29,7 +29,7 @@
     {
       "url": "https://humaniverse.github.io/asylum/",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/asylum/",
+      "finalURL": "https://humaniverse.org/asylum/",
       "result": "passed"
     },
     {
@@ -76,9 +76,10 @@
     },
     {
       "url": "https://matthewgthomas.shinyapps.io/compare-risk-maps/",
+      "result": "passed",
       "httpStatus": 200,
       "finalURL": "https://matthewgthomas.shinyapps.io/compare-risk-maps/",
-      "result": "passed"
+      "verification": "Targeted HTTP GET with curl after the automated HEAD request timed out."
     },
     {
       "url": "https://github.com/humaniverse/compare-risk-maps/blob/main/LICENSE",
@@ -148,9 +149,10 @@
     },
     {
       "url": "https://matthewgthomas.shinyapps.io/deprivation-explorer/",
+      "result": "passed",
       "httpStatus": 200,
       "finalURL": "https://matthewgthomas.shinyapps.io/deprivation-explorer/",
-      "result": "passed"
+      "verification": "Targeted HTTP GET with curl after the automated HEAD request timed out."
     },
     {
       "url": "https://github.com/humaniverse/deprivation-explorer/blob/main/LICENSE",
@@ -167,7 +169,7 @@
     {
       "url": "https://humaniverse.github.io/fermi/",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/fermi/",
+      "finalURL": "https://humaniverse.org/fermi/",
       "result": "passed"
     },
     {
@@ -203,7 +205,7 @@
     {
       "url": "https://humaniverse.github.io/geographr/",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/geographr/",
+      "finalURL": "https://humaniverse.org/geographr/",
       "result": "passed"
     },
     {
@@ -227,7 +229,7 @@
     {
       "url": "https://humaniverse.github.io/globalvuln/",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/globalvuln/",
+      "finalURL": "https://humaniverse.org/globalvuln/",
       "result": "passed"
     },
     {
@@ -239,7 +241,7 @@
     {
       "url": "https://humaniverse.github.io/globalvuln/indices-explorer.html",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/globalvuln/indices-explorer.html",
+      "finalURL": "https://humaniverse.org/globalvuln/indices-explorer.html",
       "result": "passed"
     },
     {
@@ -311,7 +313,7 @@
     {
       "url": "https://humaniverse.github.io/healthyr/",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/healthyr/",
+      "finalURL": "https://humaniverse.org/healthyr/",
       "result": "passed"
     },
     {
@@ -365,7 +367,7 @@
     {
       "url": "https://humaniverse.github.io/IMD/",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/IMD/",
+      "finalURL": "https://humaniverse.org/IMD/",
       "result": "passed"
     },
     {
@@ -527,7 +529,7 @@
     {
       "url": "https://humaniverse.github.io/build-index/",
       "httpStatus": 200,
-      "finalURL": "https://humaniverse.github.io/build-index/",
+      "finalURL": "http://humaniverse.org/build-index/",
       "result": "passed"
     },
     {

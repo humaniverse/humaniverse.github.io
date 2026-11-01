@@ -178,6 +178,16 @@ dd{margin:4px 0 0;line-height:1.45}
 .guide-guidance{margin-top:16px}
 .guide-guidance h2{font-size:28px;margin-bottom:16px}
 .guide-guidance p{color:var(--color-muted)}
+.supporting-section{margin-top:40px}
+.section-description{color:var(--color-muted);margin-bottom:24px}
+.recommendation-secondary{padding:24px 0}
+.recommendation-secondary h3{font-size:22px}
+.guide-related{margin-top:28px;padding-top:24px;border-top:1px solid var(--color-divider)}
+.guide-related h3{font-size:20px}
+.guide-related ul{list-style:none;margin:16px 0 0;padding:0}
+.guide-related li+li{margin-top:24px}
+.guide-related li>a{font-size:17px}
+.guide-related li>p{font-size:15px;color:var(--color-muted);margin-top:8px}
 .about-page{padding-bottom:80px}
 .about-page .page-intro{padding-bottom:56px}
 .about-page .page-intro h1{max-width:20ch}

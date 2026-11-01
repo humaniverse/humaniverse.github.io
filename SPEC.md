@@ -42,7 +42,7 @@ Lead with plain-language purposes. Explain technical prerequisites where they af
 - Homepage introducing Humaniverse and both discovery routes.
 - Complete, curated catalogue of public, user-facing Humaniverse projects, with search and filters.
 - A project detail page for each published catalogue record.
-- Task index and three initial task guides.
+- Task index and eight task guides covering communities, hazards, health and access, country-level vulnerability, anticipatory analysis, index building, uncertainty, and data maintenance.
 - About page explaining purpose, maintainers and how to contribute. Also include a link to the [R Universe site](https://humaniverse.r-universe.dev/packages).
 - Responsive navigation, accessible states, descriptive page metadata, sitemap and a useful 404 page.
 
@@ -95,7 +95,7 @@ Heading: **What are you working on?**
 
 Supporting copy: “Start with a task to find useful data and tools.”
 
-Show the task links, each with one sentence explaining its scope and a visible **View suggested tools** action. These open their individual task pages. A separate **See all tasks** link opens `/tasks/`. A taxonomy of tasks hasn't been decided yet.
+Show three selected task links, each with one sentence explaining its scope and a visible **View suggested tools** action. These open their individual task pages. Select the preview through pathway `featured` flags. A separate **See all 8 tasks** link opens `/tasks/`. The adopted taxonomy is specified below.
 
 These sections remain visually and semantically distinct. Do not place the task guide inside a catalogue filter panel.
 
@@ -136,7 +136,7 @@ Below the catalogue introduction, include a quiet cross-link: “Not sure where 
 
 ### Task index
 
-Use **What are you working on?** as the H1. Present three full-width task choices with visible link treatment, scope descriptions and explicit actions. Selecting a task navigates to a stable guide URL.
+Use **What are you working on?** as the H1. Present all eight full-width task choices with visible link treatment, scope descriptions and explicit actions. Selecting a task navigates to a stable guide URL. Preserve existing IDs and slugs when updating task titles.
 
 This is a shallow, task-based guide rather than a multi-step questionnaire. Do not ask visitors to enter their location, organisation, beneficiaries or operational circumstances. Future branching should be added only when it changes the useful recommendations and the content supports it.
 
@@ -144,23 +144,29 @@ This is a shallow, task-based guide rather than a multi-step questionnaire. Do n
 
 1. Task title and a short statement of what the guide can help with.
 2. Important coverage and prerequisites, such as UK-only data or an R requirement.
-3. Two to four suggested resources, each with a task-specific explanation, an internal project link and verified direct access links.
+3. One to four main suggested resources, each with a task-specific explanation, an internal project link and verified direct access links. A single flagship resource is appropriate when it directly supports a distinct task.
 4. Brief guidance on using the resources: relevant inputs, outputs and limits. Describe an ordered workflow only where an actual sequence is justified and reviewed.
-5. **Browse related projects** linking to an appropriate catalogue filter, plus **Choose another task** linking to `/tasks/`.
+5. Optional supporting resources and related data/research, presented with quieter links to project details and clear usage context. Derive reciprocal project-to-task links from all resource groups.
+6. **Browse related projects** linking to an appropriate catalogue filter, plus **Choose another task** linking to `/tasks/`. Include contextual links to related tasks where useful, resolving titles and URLs from their records.
 
 Recommendations are editorial suggestions, not a compatibility guarantee or an assertion that the resources automatically connect. Do not use connectors or step numbers to imply an unverified pipeline.
 
-### Initial editorial candidates
+### Adopted task taxonomy
 
-The following are grounded in repository READMEs inspected during the design exploration. Confirm availability, classification, coverage, maturity and suitability before launch; this is not a complete catalogue.
+The eight guides follow the catalogue review in `docs/task-pathways-review.md`. Every published product has a task home, while supporting resources and exploratory research remain distinct from main recommendations. Resource coverage and requirements remain explicit in each guide.
 
-| Task | Candidate resources and reasons | Related catalogue destination |
+| Task | Main resources | Related catalogue destination |
 | --- | --- | --- |
-| Understand a place | `demographr`: UK population estimates; `geographr`: UK boundaries and lookups | `/catalogue/?subject=people&subject=places` |
-| Explore vulnerability | `floodvulnerability`: neighbourhood flood vulnerability datasets; `intersectional-risks`: prototype vulnerability map; `geographr`: geographical context | `/catalogue/?subject=vulnerability` |
-| Build an index | `humanicheck`: input data checks; `compositr`: combining indicators into scores and indices in R; `build-index`: build a composite index without code | `/catalogue/?subject=methods` |
+| Understand a community | `demographr`, `IMD`, `deprivation-explorer`, `geographr` | `/catalogue/?subject=people&subject=places` |
+| Explore vulnerability to floods, heat and wildfire | `floodvulnerability`, `heat-disadvantage`, `wildfires`, `compare-risk-maps` | `/catalogue/?subject=risks` |
+| Investigate health inequalities and access | `healthyr`, `DEPAHRI` | `/catalogue/?subject=people&q=health` |
+| Compare country-level vulnerability | `globalvuln` | `/catalogue/?q=global` |
+| Carry out an anticipatory analysis | `anticipatory-analysis-guide` | `/catalogue/?q=anticipatory` |
+| Build an index | `build-index`, `compositr`, `shinycoin` | `/catalogue/?subject=methods` |
+| Estimate uncertainty and test assumptions | `fermi`, `specr`, `shinyspecr` | `/catalogue/?subject=methods` |
+| Maintain and share data | `humanicheck`, `peralta`, `broadcast` | `/catalogue/?subject=methods` |
 
-For the first two guides, make the UK focus explicit. An index-building guide should explain that selecting indicators and interpreting results require judgment; the packages do not choose the right humanitarian priorities for the visitor.
+Make geographical scope and access requirements explicit. Separate existing measures from tools for creating a measure; distinguish uncertain-input estimation from statistical specification curves and index-specific sensitivity analysis. Index-building and anticipatory-analysis guides must explain that the tools support judgment rather than choosing humanitarian priorities.
 
 ## Project detail pages
 
@@ -207,7 +213,9 @@ Keep `reviewedAt`, repository activity and `dataUpdatedAt` separate. Never displ
 
 Required: `id`, `slug`, `title`, `summary`, `scope`, `projectRecommendations`, `relatedCatalogueQuery`, `published`, `reviewedAt` and `evidence`.
 
-Each recommendation contains a valid `projectId`, an explanation of **why it helps with this task**, and optional usage notes or limitations. Names, status and destinations resolve from the project record. Derive project-to-pathway links from this relationship. A published pathway cannot reference an unpublished or missing project.
+Each recommendation contains a valid `projectId`, an explanation of **why it helps with this task**, and optional usage notes or limitations. Main `projectRecommendations` contain one to four items. Optional `supportingResources` and `researchResources` use the same reference structure; a resource cannot appear twice within a pathway. Names, status and destinations resolve from the project record. Derive project-to-pathway links from all three resource groups. A published pathway cannot reference an unpublished or missing project.
+
+Require `guidance` for the using-resources section. Optional `relatedPathways` entries contain a valid `pathwayId` and a task-specific explanation; reject missing, unpublished, duplicate or self-referencing links. Optional boolean `featured` selects the homepage task preview.
 
 ## Delivery and maintenance
 

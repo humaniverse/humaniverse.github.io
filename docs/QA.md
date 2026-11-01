@@ -1,5 +1,22 @@
 # Release verification
 
+## Eight-task update — 1 November 2026
+
+- `npm test`: all eight tests passed, including resource and related-task reference validation, single-resource guides, full catalogue coverage, reciprocal links for supporting/research resources, and the selected homepage preview.
+- `npm run build`: 41 static HTML pages, including eight task guides and 28 project pages; the sitemap contains 40 routes. The three existing task URLs remain valid.
+- All 28 published products have a task home. The task index lists eight choices; the homepage shows three selected guides and a link to all eight. Exploratory material is labelled separately from main recommendations.
+- All 96 unique external destinations returned HTTP 200. The automated audit verified 94; Compare risk maps and Deprivation Explorer timed out on HEAD requests, then returned their expected app HTML with HTTP 200 on targeted GET retries. Both retries are annotated in `docs/link-checks.json`. This verifies HTTP destinations, not app calculations or data freshness.
+- Browser checks covered the task index, all eight guides, the homepage and the hiedata detail page. No horizontal overflow was detected in the complete 11-page checks at 320, 390 and 1440 CSS pixels. Additional checks exercised tablet/intermediate widths. Desktop and mobile screenshots were inspected for long titles, task-choice layout and the health guide.
+- Followed the health guide’s research link to hiedata and its reciprocal task link back. Verified the skip link moves focus to main and the mobile menu expands with Enter. Browser error logs were empty during the final desktop checks.
+- Main and supplemental resource content and navigation are statically rendered and covered by the no-JavaScript build test. Existing catalogue search/filter behaviour is covered by the unchanged discovery tests; the original browser checks below were not repeated in full.
+- Screenshot evidence is saved in `output/cua/tasks-eight-desktop.jpg`, `output/cua/tasks-eight-mobile.jpg` and `output/cua/health-task-mobile.jpg` (ignored by Git).
+
+Real practitioner/analyst taxonomy testing, native 200% browser zoom and production-host checks remain outstanding. This update has not been pushed or deployed.
+
+## Original three-guide baseline
+
+The following sections record verification before the eight-task update.
+
 Implementation reviewed on 1 November 2026 using Node.js 22 and Chromium, against the local static build.
 
 ## Build and content

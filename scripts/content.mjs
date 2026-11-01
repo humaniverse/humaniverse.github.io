@@ -4,6 +4,8 @@ import { subjects, types } from '../src/discovery.mjs';
 
 export const root = resolve(import.meta.dirname, '..');
 export const readJSON = path => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
+export const resourceGroups = ['projectRecommendations', 'supportingResources', 'researchResources'];
+export const pathwayResources = pathway => resourceGroups.flatMap(key => pathway[key] || []);
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 export function validateContent(projects, pathways, inventory) {
@@ -41,15 +43,33 @@ export function validateContent(projects, pathways, inventory) {
   }
   for (const p of pathways) {
     const label = p.id || 'Pathway';
-    for (const key of ['id','slug','title','summary','scope','relatedCatalogueQuery']) requireText(p, key, label);
+    for (const key of ['id','slug','title','summary','scope','guidance','relatedCatalogueQuery']) requireText(p, key, label);
     if (!slugPattern.test(p.slug || '') || typeof p.published !== 'boolean') errors.push(`${label}: invalid publication or slug`);
-    if (!Array.isArray(p.projectRecommendations) || p.projectRecommendations.length < 2 || p.projectRecommendations.length > 4) errors.push(`${label}: must recommend 2–4 projects`);
-    else {
-      unique(p.projectRecommendations, 'projectId', label);
-      for (const recommendation of p.projectRecommendations) {
+    if (p.featured !== undefined && typeof p.featured !== 'boolean') errors.push(`${label}: featured must be boolean`);
+    if (!Array.isArray(p.projectRecommendations) || p.projectRecommendations.length < 1 || p.projectRecommendations.length > 4) errors.push(`${label}: must recommend 1–4 projects`);
+    const resources = [];
+    for (const group of resourceGroups) {
+      if (p[group] === undefined && group !== 'projectRecommendations') continue;
+      if (!Array.isArray(p[group])) { errors.push(`${label}: invalid ${group}`); continue; }
+      resources.push(...p[group]);
+      for (const recommendation of p[group]) {
         const project = projects.find(x => x.id === recommendation.projectId);
         if (!project || (p.published && !project.published)) errors.push(`${label}: missing or unpublished project ${recommendation.projectId}`);
         requireText(recommendation, 'explanation', label);
+        if (recommendation.usageNotes !== undefined) requireText(recommendation, 'usageNotes', label);
+      }
+    }
+    unique(resources, 'projectId', label);
+    if (p.relatedPathways !== undefined) {
+      if (!Array.isArray(p.relatedPathways)) errors.push(`${label}: invalid relatedPathways`);
+      else {
+        unique(p.relatedPathways, 'pathwayId', label);
+        for (const related of p.relatedPathways) {
+          const pathway = pathways.find(x => x.id === related.pathwayId);
+          if (!pathway || (p.published && !pathway.published)) errors.push(`${label}: missing or unpublished related pathway ${related.pathwayId}`);
+          if (related.pathwayId === p.id) errors.push(`${label}: cannot relate a pathway to itself`);
+          requireText(related, 'explanation', label);
+        }
       }
     }
     for (const [key, value] of new URLSearchParams(p.relatedCatalogueQuery)) if (!['subject','type','q'].includes(key) || (key === 'subject' && !Object.hasOwn(subjects, value)) || (key === 'type' && !Object.hasOwn(types, value))) errors.push(`${label}: unsupported related filter`);

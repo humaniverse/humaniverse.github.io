@@ -2,79 +2,279 @@
   {
     "id": "understand-a-place",
     "slug": "understand-a-place",
-    "title": "Understand a place",
-    "summary": "Find UK population estimates, boundaries and geographical lookups.",
-    "scope": "This guide focuses on the United Kingdom. Both suggested resources require R and are under development. Check each dataset’s geography and reference year.",
+    "title": "Understand a community",
+    "summary": "Find population, deprivation and other evidence to describe a UK community.",
+    "scope": "This guide focuses on the United Kingdom. Deprivation Explorer works in a browser; the population and geography packages require R. IMD also links to downloadable data. Coverage, geographical units and reference years vary between resources.",
     "projectRecommendations": [
       {
         "projectId": "demographr",
-        "explanation": "Start with population estimates to describe who lives in an area and put counts into context.",
-        "usageNotes": "Choose the population table and reference year relevant to your question. Check whether you need a count, proportion or rate."
+        "explanation": "Find population estimates to describe who lives in an area and put other counts into context.",
+        "usageNotes": "Requires R and is under development. Choose a population table and reference year suited to your question; distinguish counts, proportions and rates."
+      },
+      {
+        "projectId": "IMD",
+        "explanation": "Explore existing deprivation indices and community needs data for the UK’s four nations.",
+        "usageNotes": "Use the documented R or downloadable-data route. Check the national methodology and index edition; national scores are not directly interchangeable."
+      },
+      {
+        "projectId": "deprivation-explorer",
+        "explanation": "Explore existing UK deprivation measures through a browser interface.",
+        "usageNotes": "Check the edition and geographical level shown in the app before comparing places."
       },
       {
         "projectId": "geographr",
-        "explanation": "Find boundaries and lookups to locate an area and understand how it relates to other UK geographies.",
-        "usageNotes": "Match geography codes and boundary editions. A lookup does not guarantee that differently dated data can be combined without further work."
+        "explanation": "Find boundaries, geographical lookups and rural–urban classifications to locate and describe an area.",
+        "usageNotes": "Requires R and is under development. Match geography codes and boundary editions before joining datasets."
       }
     ],
-    "guidance": "Use population and geographical context together only after checking the units and dates. These packages provide ingredients for analysis; they do not provide a complete assessment of a community’s needs.",
+    "supportingResources": [
+      {
+        "projectId": "asylum",
+        "explanation": "For a question about asylum or resettlement, find the UK statistics published by the Home Office.",
+        "usageNotes": "Requires R. The README describes a September 2023 release; check the packaged data and original publications before describing current conditions."
+      }
+    ],
+    "researchResources": [
+      {
+        "projectId": "loneliness",
+        "explanation": "Explore neighbourhood loneliness indicators when social connection is part of your question.",
+        "usageNotes": "This development project uses different approaches across the UK nations, including prescription proxies. Compare scores within nations, not between them, and do not interpret an area score as an individual’s experience."
+      }
+    ],
+    "guidance": "Use these resources to build context alongside local knowledge. Population, deprivation and geographical data describe different aspects of a community; they do not provide a complete assessment of its needs. Check units, dates and source definitions before combining them.",
+    "relatedPathways": [
+      {
+        "pathwayId": "investigate-health-and-access",
+        "explanation": "Find health indicators and evidence about barriers to healthcare."
+      },
+      {
+        "pathwayId": "explore-vulnerability",
+        "explanation": "Explore social vulnerability alongside flooding, heat and wildfire."
+      }
+    ],
     "relatedCatalogueQuery": "subject=people&subject=places",
+    "featured": true,
     "published": true,
     "reviewedAt": "2026-11-01",
     "evidence": [
       "https://github.com/humaniverse/demographr/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/demographr",
+      "https://github.com/humaniverse/IMD/blob/master/README.md",
+      "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
       "https://github.com/humaniverse/geographr/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/geographr"
+      "https://github.com/humaniverse/asylum/blob/main/README.md",
+      "https://github.com/humaniverse/loneliness/blob/main/README.md"
     ]
   },
   {
     "id": "explore-vulnerability",
     "slug": "explore-vulnerability",
-    "title": "Explore vulnerability",
-    "summary": "Explore UK neighbourhood vulnerability, deprivation and geographical context.",
-    "scope": "This guide focuses on UK data. The suggested resources require R; national coverage, methods and reference periods vary. Area-level measures cannot describe every person’s circumstances.",
+    "title": "Explore vulnerability to floods, heat and wildfire",
+    "summary": "Examine how social conditions and environmental hazards overlap.",
+    "scope": "The flood and wildfire collections cover UK nations; the heat datasets cover England, Wales and Scotland. Methods, reference periods and geographical levels vary. Coverage for Compare risk maps and the intersectional prototype is not documented. The data packages require R; Compare risk maps has a browser app.",
     "projectRecommendations": [
       {
         "projectId": "floodvulnerability",
-        "explanation": "Examine the social conditions that can make a neighbourhood more vulnerable if flooding occurs.",
-        "usageNotes": "The 2025 neighbourhood index covers the UK. Other flood datasets have different coverage and dates. Social vulnerability and hazard exposure answer different questions."
+        "explanation": "Examine social conditions that can make a neighbourhood more vulnerable if flooding occurs, alongside available flood disadvantage and flood-area data.",
+        "usageNotes": "The 2025 neighbourhood index is UK-wide; other datasets have different coverage and dates. Social vulnerability and hazard exposure answer different questions."
       },
       {
-        "projectId": "IMD",
-        "explanation": "Add context about deprivation and community needs using the indices appropriate to each UK nation.",
-        "usageNotes": "Check the index edition and geographical level. National deprivation scores are not directly interchangeable."
+        "projectId": "heat-disadvantage",
+        "explanation": "Explore where heat exposure and social vulnerability combine in England, Wales and Scotland.",
+        "usageNotes": "Downloadable data use different methods for Scotland and England/Wales. Northern Ireland is not included; check the baseline or warming scenario and the national classification."
       },
       {
-        "projectId": "geographr",
-        "explanation": "Find the boundaries and lookup tables needed to understand the geographical units in the vulnerability data.",
-        "usageNotes": "Check that codes and boundary vintages match before joining. The package is under development."
+        "projectId": "wildfires",
+        "explanation": "Explore the overlap between social vulnerability and modelled spring or summer wildfire risk.",
+        "usageNotes": "Requires R. Scores are standardised separately within each UK nation and are not live incident forecasts."
+      },
+      {
+        "projectId": "compare-risk-maps",
+        "explanation": "Compare overlaps and differences between disaster risk, resilience and vulnerability maps in a browser.",
+        "usageNotes": "Check the app’s dataset definitions and geographical coverage. Overlapping classifications do not establish causes or determine priorities."
       }
     ],
-    "guidance": "Read the source methodology before comparing places. Use these indicators to ask better questions alongside local knowledge, rather than treating a map or rank as a complete statement of need. These resources are suggestions, not a pre-connected analytical pipeline.",
+    "supportingResources": [
+      {
+        "projectId": "geographr",
+        "explanation": "Find geographical boundaries and lookups when you need to relate a hazard dataset to other evidence.",
+        "usageNotes": "Requires R and is under development. Check geography codes, boundary editions and aggregation methods."
+      }
+    ],
+    "researchResources": [
+      {
+        "projectId": "intersectional-risks",
+        "explanation": "Inspect research prototyping overlapping dimensions of vulnerability.",
+        "usageNotes": "The README identifies a prototype but does not document geographical coverage or operational suitability. No hosted app is documented."
+      }
+    ],
+    "guidance": "Choose the hazard and geographical scale relevant to your question, then read the source methodology. Distinguish exposure from social vulnerability and check which comparisons each measure supports. These resources provide evidence for discussion with local knowledge; they are not a connected pipeline or a service for predicting the next incident.",
+    "relatedPathways": [
+      {
+        "pathwayId": "understand-a-place",
+        "explanation": "Add population, deprivation and geographical context."
+      },
+      {
+        "pathwayId": "compare-country-vulnerability",
+        "explanation": "Explore country-level indices for a different geographical scale."
+      }
+    ],
     "relatedCatalogueQuery": "subject=risks",
     "published": true,
     "reviewedAt": "2026-11-01",
     "evidence": [
       "https://github.com/humaniverse/floodvulnerability/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/floodvulnerability",
-      "https://github.com/humaniverse/IMD/blob/master/README.md",
-      "https://api.github.com/repos/humaniverse/IMD",
+      "https://github.com/humaniverse/heat-disadvantage/blob/main/README.md",
+      "https://github.com/humaniverse/wildfires/blob/main/README.md",
+      "https://github.com/humaniverse/compare-risk-maps/blob/main/README.md",
       "https://github.com/humaniverse/geographr/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/geographr"
+      "https://github.com/humaniverse/intersectional-risks/blob/main/README.md"
+    ]
+  },
+  {
+    "id": "investigate-health-and-access",
+    "slug": "investigate-health-and-access",
+    "title": "Investigate health inequalities and access",
+    "summary": "Find indicators of health and barriers to accessing healthcare.",
+    "scope": "healthyr distributes UK health data; DEPAHRI covers England, Wales and Scotland. Both require R and are under development. Related health-index projects are unfinished, and the Health Inequalities Explorer data repository does not document its coverage or a hosted app.",
+    "projectRecommendations": [
+      {
+        "projectId": "healthyr",
+        "explanation": "Find UK health datasets to investigate health conditions and differences between places.",
+        "usageNotes": "Requires R and is under development. Review each dataset’s source, reference period, definitions and geographical coverage."
+      },
+      {
+        "projectId": "DEPAHRI",
+        "explanation": "Examine the risk of digital exclusion and physical barriers to healthcare.",
+        "usageNotes": "Requires R and covers Great Britain. The index combines four equally weighted components; it describes area-level risk rather than an individual’s access. A reuse license is not yet specified."
+      }
+    ],
+    "researchResources": [
+      {
+        "projectId": "hiedata",
+        "explanation": "Inspect the source files used in the Health Inequalities Explorer.",
+        "usageNotes": "The repository does not document geography, periods or individual data definitions. Review file provenance before use; no hosted explorer is documented."
+      },
+      {
+        "projectId": "healthindexwales",
+        "explanation": "Inspect development work towards a Health Index for Welsh local authorities.",
+        "usageNotes": "The README describes a data-collection pause awaiting a new StatsWales API and does not confirm a restart. Review all data and outputs."
+      },
+      {
+        "projectId": "healthindexscotland",
+        "explanation": "Explore indicator metadata and methods for a Scottish Health Index.",
+        "usageNotes": "This is work in progress. Source years and licenses vary, and some indicators are unavailable; do not treat it as a complete current health index."
+      },
+      {
+        "projectId": "healthindexni",
+        "explanation": "Inspect health inequality indicators collected for Northern Ireland.",
+        "usageNotes": "This development repository has unfinished documentation and unavailable indicators. Check the metadata, definitions and source periods before use."
+      }
+    ],
+    "guidance": "Start with the health outcome or access barrier you want to understand. Check whether an indicator measures an outcome, a determinant or a proxy, and compare places only where definitions and geographical units support it. The related development projects are material to inspect, not a single reviewed UK health index.",
+    "relatedPathways": [
+      {
+        "pathwayId": "understand-a-place",
+        "explanation": "Add population and deprivation context, or explore the neighbourhood loneliness research."
+      },
+      {
+        "pathwayId": "build-an-index",
+        "explanation": "Build a new composite measure using your own indicators and explicit methods."
+      }
+    ],
+    "relatedCatalogueQuery": "subject=people&q=health",
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/healthyr/blob/main/README.md",
+      "https://github.com/humaniverse/DEPAHRI/blob/main/README.md",
+      "https://github.com/humaniverse/hiedata/blob/main/README.md",
+      "https://github.com/humaniverse/healthindexwales/blob/main/README.md",
+      "https://github.com/humaniverse/healthindexscotland/blob/main/README.md",
+      "https://github.com/humaniverse/healthindexni/blob/main/README.md"
+    ]
+  },
+  {
+    "id": "compare-country-vulnerability",
+    "slug": "compare-country-vulnerability",
+    "title": "Compare country-level vulnerability",
+    "summary": "Find and compare published global indices, their concepts and coverage.",
+    "scope": "globalvuln offers a browser explorer and a separate R data package. Coverage varies by index and reference period. Country-level measures answer different questions from neighbourhood vulnerability datasets.",
+    "projectRecommendations": [
+      {
+        "projectId": "globalvuln",
+        "explanation": "Compare the concepts, structures, sources and coverage of published global indices, and access country-level data in R.",
+        "usageNotes": "Use the browser explorer to understand the indices, or the R package for your own analysis. Publisher scores retain their original scales; missing coverage does not mean low vulnerability. The package produces no combined cross-index meta-score."
+      }
+    ],
+    "guidance": "Define what you want to compare before choosing an index: risk, crisis severity, fragility, development and other concepts are distinct. Read the publisher’s methodology and check coverage and source periods. In R, choose explicitly between the installed snapshot and the latest approved data, and record the version used.",
+    "relatedPathways": [
+      {
+        "pathwayId": "explore-vulnerability",
+        "explanation": "Explore local hazard and social-vulnerability evidence."
+      },
+      {
+        "pathwayId": "anticipatory-analysis",
+        "explanation": "Use evidence within a structured anticipatory analysis."
+      }
+    ],
+    "relatedCatalogueQuery": "q=global",
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/globalvuln/blob/main/README.md"
+    ]
+  },
+  {
+    "id": "anticipatory-analysis",
+    "slug": "anticipatory-analysis",
+    "title": "Carry out an anticipatory analysis",
+    "summary": "Learn the method, develop an analysis or facilitate a workshop.",
+    "scope": "The field guide works in a browser and is not geography-specific. It supports learning, individual working sessions and workshop facilitation. One working session is stored in your browser; export backups to keep your work.",
+    "projectRecommendations": [
+      {
+        "projectId": "anticipatory-analysis-guide",
+        "explanation": "Learn the anticipatory analysis method, develop your own working session or use the facilitation material to run a workshop.",
+        "usageNotes": "Choose the learning, working-session or workshop section to suit your task. Export a JSON backup to restore your session later, and export or print the analysis in Markdown. Fictional examples are separate learning material."
+      }
+    ],
+    "supportingResources": [
+      {
+        "projectId": "fermi",
+        "explanation": "For a separate quantitative estimation question, break an uncertain quantity into smaller components and explore a range of outcomes.",
+        "usageNotes": "Requires R and is under development. You supply the assumptions and how quantities combine; this is an optional estimation method, not an integrated stage of the field guide."
+      }
+    ],
+    "guidance": "Frame the question, examine evidence and assumptions, and use the guide to structure discussion about what could happen. Document uncertainty and review the analysis as conditions change. Qualitative labels and workshop votes support discussion; the guide does not compute risk scores or automatically select priorities.",
+    "relatedPathways": [
+      {
+        "pathwayId": "compare-country-vulnerability",
+        "explanation": "Explore published global indices as possible contextual evidence."
+      },
+      {
+        "pathwayId": "estimate-uncertainty-and-test-assumptions",
+        "explanation": "Choose an estimation or analytical sensitivity method."
+      }
+    ],
+    "relatedCatalogueQuery": "q=anticipatory",
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "https://github.com/humaniverse/fermi/blob/master/README.md"
     ]
   },
   {
     "id": "build-an-index",
     "slug": "build-an-index",
-    "title": "Build an index",
-    "summary": "Check your data and combine indicators into a composite index.",
-    "scope": "Use your own indicator data. The browser builder works without R; humanicheck and compositr require R. Selecting indicators, weighting them and interpreting results all require judgment.",
+    "title": "Build a risk or vulnerability index",
+    "summary": "Combine your own indicators into a documented composite index.",
+    "scope": "Bring your own indicator data. Vulnerability Index Builder works in a browser without R; compositr requires R, and shinycoin requires a local R/Shiny setup. These tools offer different methods and workflows. Indicator selection, weighting and interpretation require judgment.",
     "projectRecommendations": [
       {
-        "projectId": "humanicheck",
-        "explanation": "Inspect your input data for missing values, duplicates and possible outliers before deciding how to use it.",
-        "usageNotes": "Pass an R data frame or tibble to the checking function. Review each flag in context; the report does not certify data suitability."
+        "projectId": "build-index",
+        "explanation": "Use a browser workflow to group spreadsheet indicators into weighted domains and export scores, ranks, bands and a methodology record.",
+        "usageNotes": "Supply Excel or CSV data with one row per area and matching area codes. The tool reports mismatched codes, non-numeric columns and missing values; review direction, weighting and coverage before interpreting results."
       },
       {
         "projectId": "compositr",
@@ -82,22 +282,132 @@
         "usageNotes": "Bring your own indicators and explicit methodological choices. The package is under development."
       },
       {
-        "projectId": "build-index",
-        "explanation": "Use a browser interface to group spreadsheet indicators into weighted domains and export scores and a methodology record.",
-        "usageNotes": "Supply Excel or CSV data with one row per area and matching area codes. Review indicator direction, missing values and weighting choices."
+        "projectId": "shinycoin",
+        "explanation": "Use a guided COINr interface to build, explore and export an index, with a replication script and uncertainty analysis.",
+        "usageNotes": "Requires R and the documented local Shiny dependencies. Review screening, imputation, normalisation, weights and aggregation. Its sensitivity analysis explores choices within its own index-building workflow."
       }
     ],
-    "guidance": "Choose a clearly defined question and explain why each indicator belongs. Review how choices about scales, missing data and weights affect results. The R tools and browser builder offer different ways to work; compatibility between their outputs is not guaranteed. No index chooses the right humanitarian priorities for you.",
+    "supportingResources": [
+      {
+        "projectId": "humanicheck",
+        "explanation": "Inspect input data for missing values, duplicate rows, possible outliers and geometry-type consistency.",
+        "usageNotes": "Requires R. Pass a data frame or tibble to the checking function and review each flag in context; the report does not certify suitability for an index."
+      }
+    ],
+    "guidance": "Define a clear question and explain why each indicator belongs. Choose a tool by the access and methods you need, then document scales, missing-data treatment, weights and sensitivity. Outputs from different tools are not guaranteed to be equivalent or compatible. An index provides evidence; it does not choose humanitarian priorities.",
+    "relatedPathways": [
+      {
+        "pathwayId": "estimate-uncertainty-and-test-assumptions",
+        "explanation": "Explore estimation and sensitivity methods for other analytical questions."
+      },
+      {
+        "pathwayId": "maintain-and-share-data",
+        "explanation": "Check, maintain and export the data behind your analysis."
+      }
+    ],
+    "relatedCatalogueQuery": "subject=methods",
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "https://github.com/humaniverse/compositr/blob/main/README.md",
+      "https://github.com/humaniverse/shinycoin/blob/main/README.md",
+      "https://github.com/humaniverse/humanicheck/blob/main/README.md"
+    ]
+  },
+  {
+    "id": "estimate-uncertainty-and-test-assumptions",
+    "slug": "estimate-uncertainty-and-test-assumptions",
+    "title": "Estimate uncertainty and test assumptions",
+    "summary": "Estimate uncertain quantities or examine how analytical choices affect results.",
+    "scope": "These tools require R. fermi estimates outcomes from uncertain component quantities; specr tests statistical specifications; shinyspecr explores a specr result in a local Shiny app. They answer different questions and do not certify that an analysis is valid.",
+    "projectRecommendations": [
+      {
+        "projectId": "fermi",
+        "explanation": "Estimate a quantity by breaking it into smaller uncertain components and simulating possible outcomes.",
+        "usageNotes": "Define the component distributions and how they combine. Results depend on your assumptions; they are probabilistic estimates rather than observed totals."
+      },
+      {
+        "projectId": "specr",
+        "explanation": "Test how theoretically plausible analytical choices affect statistical results using specification curves.",
+        "usageNotes": "This is Humaniverse’s fork of specr; the linked documentation describes the upstream methods. Choose defensible specifications. A specification curve does not make an estimate more valid or generalisable."
+      },
+      {
+        "projectId": "shinyspecr",
+        "explanation": "Interactively explore a specification curve, its analytical choices and the individual models behind it.",
+        "usageNotes": "Requires a specr result object and local R/Shiny dependencies. Supplying the original dataset enables model refitting. No hosted app is documented."
+      }
+    ],
+    "supportingResources": [
+      {
+        "projectId": "shinycoin",
+        "explanation": "For a composite index built with COINr, explore sensitivity to weights, normalisation and aggregation within shinycoin.",
+        "usageNotes": "Requires a local R/Shiny setup. This is index-specific sensitivity analysis, separate from the statistical specification curves supported by specr."
+      }
+    ],
+    "guidance": "Choose the method that matches the uncertainty you want to examine. Use fermi for uncertain input quantities, or specr and shinyspecr for analytical choices in statistical models. A specr result can be passed to shinyspecr; other combinations are not an implied pipeline. Record the assumptions tested and the uncertainties that remain outside the analysis.",
+    "relatedPathways": [
+      {
+        "pathwayId": "anticipatory-analysis",
+        "explanation": "Structure a wider anticipatory analysis or workshop."
+      },
+      {
+        "pathwayId": "build-an-index",
+        "explanation": "Choose an index-building method, including its own sensitivity options."
+      }
+    ],
+    "relatedCatalogueQuery": "subject=methods",
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/fermi/blob/master/README.md",
+      "https://github.com/humaniverse/specr/blob/master/README.md",
+      "https://github.com/humaniverse/shinyspecr/blob/main/README.md",
+      "https://github.com/humaniverse/shinycoin/blob/main/README.md"
+    ]
+  },
+  {
+    "id": "maintain-and-share-data",
+    "slug": "maintain-and-share-data",
+    "title": "Maintain and share data",
+    "summary": "Check data, watch source pages for updates and export package data for others.",
+    "scope": "All three tools require R and are under development. humanicheck takes a data frame or tibble; peralta checks a list of source webpages; broadcast exports data files from an R package. Use the tool that fits your maintenance task.",
+    "projectRecommendations": [
+      {
+        "projectId": "humanicheck",
+        "explanation": "Check a dataset for missing values, duplicated rows, possible numerical outliers and geometry-type consistency.",
+        "usageNotes": "Review flags against source definitions and your intended use. These diagnostics cannot establish that a dataset is complete, representative or fit for purpose."
+      },
+      {
+        "projectId": "peralta",
+        "explanation": "Watch source webpages for changes that may indicate newly published datasets.",
+        "usageNotes": "Supply the URLs you want to check. A page change needs review to establish whether and how the underlying data changed."
+      },
+      {
+        "projectId": "broadcast",
+        "explanation": "Export datasets from an R package as CSV files so that others can use them outside R.",
+        "usageNotes": "Requires a package containing .rda data files. Check the exported files and the source data’s attribution and reuse terms before sharing."
+      }
+    ],
+    "guidance": "Choose whether you need to inspect a dataset, check for source updates or export package data. These are independent utilities, not an automatic maintenance pipeline. Review detected issues or updates, record provenance and versions, and include definitions and reuse information when sharing data.",
+    "relatedPathways": [
+      {
+        "pathwayId": "build-an-index",
+        "explanation": "Use maintained indicator data in a documented composite index."
+      },
+      {
+        "pathwayId": "understand-a-place",
+        "explanation": "Find population and geography resources for community analysis."
+      }
+    ],
     "relatedCatalogueQuery": "subject=methods",
     "published": true,
     "reviewedAt": "2026-11-01",
     "evidence": [
       "https://github.com/humaniverse/humanicheck/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/humanicheck",
-      "https://github.com/humaniverse/compositr/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/compositr",
-      "https://github.com/humaniverse/build-index/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/build-index"
+      "https://github.com/humaniverse/peralta/blob/main/README.md",
+      "https://github.com/humaniverse/broadcast/blob/main/README.md"
     ]
   }
 ]

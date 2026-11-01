@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync, cpSync, rmSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { root, loadContent } from './content.mjs';
+import { root, loadContent, pathwayResources } from './content.mjs';
 import { subjects, types } from '../src/discovery.mjs';
 
 export const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -16,6 +16,8 @@ const meta = p => `${p.types.map(t => types[t]).join(' / ')}${p.platforms?.lengt
 
 export function buildSite() {
   const { projects, pathways, featuredProjects } = loadContent();
+  const featuredPathways = pathways.filter(p => p.featured);
+  const taskPreview = featuredPathways.length ? featuredPathways : pathways.slice(0, 3);
   const origin = new URL(process.env.SITE_URL || 'https://humaniverse.github.io');
   if (!['https:', 'http:'].includes(origin.protocol) || origin.pathname !== '/' || origin.search || origin.hash) throw Error('SITE_URL must be a deployment origin without a path, query or fragment.');
   const dist = resolve(root, 'dist');
@@ -54,12 +56,27 @@ export function buildSite() {
   function taskChoice(p, compact = false, level = 3) {
     return `<a class="task-choice${compact ? ' task-choice-compact' : ''}" href="/tasks/${e(p.slug)}/"><h${level}>${e(p.title)}</h${level}><p>${e(p.summary)}</p><span class="task-action">View suggested tools</span></a>`;
   }
+  function recommendation(r, secondary = false) {
+    const resource = projects.find(p => p.id === r.projectId);
+    return `<article class="recommendation${secondary ? ' recommendation-secondary' : ''}"><p class="resource-kind">${meta(resource)}</p><h3><a href="/catalogue/${resource.slug}/">${e(resource.name)}</a></h3><p>${e(r.explanation)}</p>${r.usageNotes ? `<p class="usage-note">${e(r.usageNotes)}</p>` : ''}${secondary ? '' : access(resource)}<p class="project-meta">${e(resource.coverage)}<br> ${maturity[resource.maturity]}</p></article>`;
+  }
+  function resourceSection(resources, id, title, introduction = '', secondary = false) {
+    if (!resources?.length) return '';
+    return `<section class="recommendations${secondary ? ' supporting-section' : ''}" aria-labelledby="${id}"><h2 id="${id}">${title}</h2>${introduction ? `<p class="section-description">${introduction}</p>` : ''}${resources.map(r => recommendation(r, secondary)).join('')}</section>`;
+  }
+  function relatedPathwayLinks(p) {
+    if (!p.relatedPathways?.length) return '';
+    return `<div class="guide-related"><h3>Related tasks</h3><ul>${p.relatedPathways.map(r => {
+      const task = pathways.find(t => t.id === r.pathwayId);
+      return `<li>${textLink(`/tasks/${task.slug}/`, task.title)}<p>${e(r.explanation)}</p></li>`;
+    }).join('')}</ul></div>`;
+  }
   const breadcrumb = (href, label, current, catalogue = false) => `<nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href}"${catalogue ? ' data-catalogue-back' : ''}>${label}</a><span aria-hidden="true">/</span><span aria-current="page">${e(current)}</span></nav>`;
 
   write('/', 'Humaniverse', 'Data packages and decision-support tools for people working to help people.', `
   <section class="hero container"><div class="hero-copy"><h1>Shared tools for humanitarian work.</h1><p class="intro">Data packages and decision-support tools for people working to help people.</p><div class="hero-actions">${button('/catalogue/','Browse catalogue')}${button('/tasks/','Find tools for a task',true)}</div></div><div class="hero-art" aria-hidden="true"><div class="brand-circle"><span></span><span></span><span></span><span></span></div><div class="hero-mark"><img src="${brand}" width="204" height="204" alt=""></div></div></section>
   <section class="collection-section container" aria-labelledby="collection-heading"><div class="section-heading"><div><h2 id="collection-heading">Explore the collection</h2><p>Data, methods and apps. Find something useful.</p></div><a href="/catalogue/">Browse all projects</a></div><div class="featured-grid">${featuredProjects.map(p => {return `<article class="featured-project"><p class="resource-kind">${meta(p)}</p><h3><a href="/catalogue/${p.slug}/">${e(p.name)}</a></h3><p class="project-summary">${e(p.summary)}</p>${access(p,true)}</article>`;}).join('')}</div></section>
-  <section class="task-band" aria-labelledby="task-heading"><div class="container"><div class="section-heading"><div><h2 id="task-heading">What are you working on?</h2><p>Start with a task to find useful data and tools.</p></div></div><div class="task-choices">${pathways.map(p => taskChoice(p)).join('')}</div><a class="section-end-link" href="/tasks/">See all tasks</a></div></section>
+  <section class="task-band" aria-labelledby="task-heading"><div class="container"><div class="section-heading"><div><h2 id="task-heading">What are you working on?</h2><p>Start with a task to find useful data and tools.</p></div></div><div class="task-choices">${taskPreview.map(p => taskChoice(p)).join('')}</div><a class="section-end-link" href="/tasks/">See all ${pathways.length} tasks</a></div></section>
   `);
 
   const fieldset = (name, title, vocab) => `<fieldset><legend>${title}</legend>${Object.entries(vocab).map(([value,label]) => `<label class="checkbox-label"><input type="checkbox" name="${name}" value="${value}"><span>${label}</span></label>`).join('')}</fieldset>`;
@@ -75,11 +92,11 @@ export function buildSite() {
   write('/tasks/', 'What are you working on?', 'Start with a task to find a curated selection of Humaniverse data and tools.', `<div class="container tasks-page"><header class="page-intro"><h1>What are you working on?</h1><p class="intro">Start with a task to find useful data and tools.</p></header><div class="task-index-choices">${pathways.map(p => taskChoice(p,false,2)).join('')}</div><p class="alternative-route">Prefer to explore the whole collection? <a href="/catalogue/">Browse catalogue</a>.</p></div>`);
 
   for (const p of pathways) {
-    write(`/tasks/${p.slug}/`, p.title, p.summary, `<div class="container detail-page">${breadcrumb('/tasks/','Task pathways',p.title)}<header class="detail-intro"><h1>${e(p.title)}</h1><p class="intro">${e(p.summary)}</p></header><div class="guide-layout"><div class="guide-main"><aside class="scope-note"><h2>Before you start</h2><p>${e(p.scope)}</p></aside><section class="recommendations" aria-labelledby="suggestions-title"><h2 id="suggestions-title">Suggested resources</h2>${p.projectRecommendations.map(r=>{const resource=projects.find(x=>x.id===r.projectId);return `<article class="recommendation"><p class="resource-kind">${meta(resource)}</p><h3><a href="/catalogue/${resource.slug}/">${e(resource.name)}</a></h3><p>${e(r.explanation)}</p>${r.usageNotes ? `<p class="usage-note">${e(r.usageNotes)}</p>`:''}${access(resource)}<p class="project-meta">${e(resource.coverage)}<br> ${maturity[resource.maturity]}</p></article>`;}).join('')}</section><section class="guide-guidance"><h2>Using these resources</h2><p>${e(p.guidance)}</p></section></div><aside class="guide-aside"><h2>Keep exploring</h2><p>Look through the wider collection or start with another question.</p>${textLink(`/catalogue/?${p.relatedCatalogueQuery}`,'Browse related projects')}${textLink('/tasks/','Choose another task')}<p class="editorial-note">These are editorial suggestions. They do not guarantee compatibility between resources.</p></aside></div></div>`);
+    write(`/tasks/${p.slug}/`, p.title, p.summary, `<div class="container detail-page">${breadcrumb('/tasks/','Task pathways',p.title)}<header class="detail-intro"><h1>${e(p.title)}</h1><p class="intro">${e(p.summary)}</p></header><div class="guide-layout"><div class="guide-main"><aside class="scope-note"><h2>Before you start</h2><p>${e(p.scope)}</p></aside>${resourceSection(p.projectRecommendations, 'suggestions-title', 'Suggested resources')}<section class="guide-guidance"><h2>Using these resources</h2><p>${e(p.guidance)}</p></section>${resourceSection(p.supportingResources, 'supporting-title', 'Supporting resources', '', true)}${resourceSection(p.researchResources, 'research-title', 'Related data and research', 'These projects provide research material or source files. Check their documentation and development status before using the outputs.', true)}</div><aside class="guide-aside"><h2>Keep exploring</h2><p>Look through the wider collection or start with another question.</p>${textLink(`/catalogue/?${p.relatedCatalogueQuery}`,'Browse related projects')}${textLink('/tasks/','Choose another task')}${relatedPathwayLinks(p)}<p class="editorial-note">These are editorial suggestions. They do not guarantee compatibility between resources.</p></aside></div></div>`);
   }
 
   for (const p of projects) {
-    const related = pathways.filter(task=>task.projectRecommendations.some(r=>r.projectId===p.id));
+    const related = pathways.filter(task=>pathwayResources(task).some(r=>r.projectId===p.id));
     write(`/catalogue/${p.slug}/`, p.name, p.summary, `<div class="container detail-page">${breadcrumb('/catalogue/','Catalogue',p.name,true)}<header class="detail-intro"><p class="resource-kind">${meta(p)}</p><h1>${e(p.name)}</h1><p class="intro">${e(p.summary)}</p>${access(p)}</header><div class="project-detail-layout"><div class="reading-content"><section><h2>What it helps with</h2><p>${e(p.description)}</p></section>${p.prerequisites ? `<section><h2>What you need</h2><p>${e(p.prerequisites)}</p></section>` : ''}<section><h2>Coverage and considerations</h2><p>${e(p.limitations)}</p>${p.dataPeriod ? `<p><strong>Data period:</strong> ${e(p.dataPeriod)}</p>` : ''}${p.dataUpdatedAt ? `<p><strong>Data updated:</strong> <time datetime="${p.dataUpdatedAt}">${p.dataUpdatedAt}</time></p>` : ''}</section>${p.image ? `<figure><img src="${e(p.image.path)}" alt="${e(p.image.alt)}" loading="lazy">${p.image.attribution ? `<figcaption>${e(p.image.attribution)}</figcaption>`:''}</figure>` : ''}<section><h2>Sources and reuse</h2><p>Check the project’s documentation and original data sources for definitions, attribution and reuse terms.</p><div class="source-links">${p.links.source ? textLink(p.links.source,'Project source information') : ''}${p.links.license ? textLink(p.links.license,'License and reuse terms') : ''}</div></section></div><aside class="project-facts"><h2>At a glance</h2><dl><dt>Resource type</dt><dd>${p.types.map(t=>types[t]).join(', ')}</dd><dt>Platform</dt><dd>${e(p.platforms?.join(', ') || 'Not documented')}</dd><dt>Geographic coverage</dt><dd>${e(p.coverage)}</dd><dt>Project status</dt><dd>${maturity[p.maturity]}</dd><dt>Subject</dt><dd class="subject-links">${p.subjects.map(s=>textLink(`/catalogue/?subject=${s}`,subjects[s])).join(' ')}</dd></dl></aside></div>${related.length ? `<section class="related-tasks"><h2>Useful for these tasks</h2>${related.map(t=>taskChoice(t,true)).join('')}</section>` : ''}<a class="back-to-catalogue" href="/catalogue/" data-catalogue-back>Back to catalogue</a></div>`, 'project.mjs');
   }
 
