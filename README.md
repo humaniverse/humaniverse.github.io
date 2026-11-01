@@ -23,6 +23,7 @@ The build writes a directory index for each route, a 404 page, sitemap, robots.t
 ## Content and review
 
 - `content/projects.json` is the canonical project catalogue. Add or edit a project there; no template edit is required. Use the supported subjects and types in SPEC.md.
+- The homepage shows published projects with `featured: true` in their order in `content/projects.json`. The full catalogue is sorted alphabetically.
 - `content/pathways.json` stores task context and recommendations by project ID. Project names, status and links resolve from the catalogue. Reciprocal project-to-task links are generated automatically.
 - `content/inventory.json` reconciles the public Humaniverse repositories, including explicit exclusions. Recheck the full public repository list before each release.
 

@@ -1,5 +1,121 @@
 [
   {
+    "id": "anticipatory-analysis-guide",
+    "slug": "anticipatory-analysis-guide",
+    "name": "Anticipatory analysis field guide",
+    "summary": "Learn and facilitate anticipatory humanitarian analysis.",
+    "description": "An interactive field guide with lessons, a working session and workshop facilitation material. It is based on a method developed by Madeleine Lyons and Barbara Devlieger.",
+    "subjects": [
+      "methods",
+      "risks"
+    ],
+    "types": [
+      "app",
+      "method-toolkit"
+    ],
+    "platforms": [
+      "Web browser"
+    ],
+    "coverage": "Not geography-specific",
+    "maturity": "unknown",
+    "limitations": "Working sessions are stored in your browser; export backups to keep your work. Fictional examples are learning material. The guide supports discussion and does not select priorities automatically.",
+    "links": {
+      "repository": "https://github.com/humaniverse/anticipatory-analysis-guide",
+      "docs": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "source": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "app": "https://humaniverse.github.io/anticipatory-analysis-guide/"
+    },
+    "keywords": [
+      "anticipatory-analysis-guide",
+      "Web browser"
+    ],
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/anticipatory-analysis-guide"
+    ]
+  },
+  {
+    "id": "deprivation-explorer",
+    "slug": "deprivation-explorer",
+    "name": "Deprivation Explorer",
+    "summary": "Explore the UK’s indices of multiple deprivation in your browser.",
+    "description": "A Shiny app for exploring the UK’s indices of multiple deprivation. Its source repository is available alongside the hosted app.",
+    "subjects": [
+      "people",
+      "places",
+      "risks"
+    ],
+    "types": [
+      "app"
+    ],
+    "platforms": [
+      "Web browser",
+      "R / Shiny for local use"
+    ],
+    "coverage": "United Kingdom",
+    "maturity": "unknown",
+    "limitations": "Check the edition, national methodology and geography shown in the app. Scores from separate national indices are not automatically comparable.",
+    "links": {
+      "repository": "https://github.com/humaniverse/deprivation-explorer",
+      "docs": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+      "source": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+      "app": "https://matthewgthomas.shinyapps.io/deprivation-explorer/",
+      "license": "https://github.com/humaniverse/deprivation-explorer/blob/main/LICENSE"
+    },
+    "keywords": [
+      "deprivation-explorer",
+      "Web browser",
+      "R / Shiny for local use"
+    ],
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/deprivation-explorer"
+    ]
+  },
+  {
+    "id": "build-index",
+    "slug": "build-index",
+    "name": "Vulnerability Index Builder",
+    "summary": "Turn your indicator spreadsheet into a composite vulnerability index in your browser.",
+    "description": "Upload Excel or CSV indicator data, group indicators into weighted domains and export scores, ranks and vulnerability bands. The browser app includes a guided wizard and a workspace, with an example dataset to try.",
+    "subjects": [
+      "methods"
+    ],
+    "types": [
+      "app"
+    ],
+    "platforms": [
+      "Web browser"
+    ],
+    "coverage": "Your own area-level data",
+    "maturity": "unknown",
+    "limitations": "Prepare one row per area with matching area codes. Computation happens in your browser. Review missing values, indicator direction, weighting and sensitivity; the tool does not choose appropriate priorities for you.",
+    "links": {
+      "repository": "https://github.com/humaniverse/build-index",
+      "docs": "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "source": "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "app": "https://humaniverse.github.io/build-index/",
+      "license": "https://github.com/humaniverse/build-index/blob/main/LICENSE"
+    },
+    "keywords": [
+      "build-index",
+      "Web browser"
+    ],
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/build-index/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/build-index"
+    ]
+  },
+  {
     "id": "geographr",
     "slug": "geographr",
     "name": "geographr",
@@ -28,12 +144,94 @@
       "geographr",
       "R"
     ],
-    "featured": false,
+    "featured": true,
     "published": true,
     "reviewedAt": "2026-11-01",
     "evidence": [
       "https://github.com/humaniverse/geographr/blob/main/README.md",
       "https://api.github.com/repos/humaniverse/geographr"
+    ]
+  },
+  {
+    "id": "globalvuln",
+    "slug": "globalvuln",
+    "name": "globalvuln",
+    "summary": "Compare global vulnerability indices and access country-level data in R.",
+    "description": "An R data package and browser explorer bringing together published indices of vulnerability, fragility, development, hunger, health and displacement. The explorer helps compare concepts, coverage and sources.",
+    "subjects": [
+      "risks",
+      "people",
+      "places"
+    ],
+    "types": [
+      "app",
+      "data-package"
+    ],
+    "platforms": [
+      "Web browser",
+      "R for the data package"
+    ],
+    "coverage": "Global; country-level coverage varies by index",
+    "maturity": "development",
+    "limitations": "Original publisher scores retain their scales. No cross-index meta-score is produced; missing coverage must not be read as low vulnerability. Reference periods and reuse terms differ by publisher.",
+    "links": {
+      "repository": "https://github.com/humaniverse/globalvuln",
+      "docs": "https://humaniverse.github.io/globalvuln/",
+      "source": "https://github.com/humaniverse/globalvuln/blob/main/README.md",
+      "app": "https://humaniverse.github.io/globalvuln/indices-explorer.html",
+      "license": "https://github.com/humaniverse/globalvuln/blob/main/LICENSE"
+    },
+    "keywords": [
+      "globalvuln",
+      "Web browser",
+      "R for the data package"
+    ],
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/globalvuln/blob/main/README.md",
+      "https://api.github.com/repos/humaniverse/globalvuln"
+    ]
+  },
+  {
+    "id": "IMD",
+    "slug": "imd",
+    "name": "IMD",
+    "summary": "Access deprivation indices and community needs data for all four UK nations.",
+    "description": "An R package providing Indices of Multiple Deprivation at several geographical levels, Community Needs Index files and selected household deprivation figures. A released version is available on CRAN; data downloads are linked in its README.",
+    "subjects": [
+      "people",
+      "places",
+      "risks"
+    ],
+    "types": [
+      "data-package",
+      "dataset"
+    ],
+    "platforms": [
+      "R"
+    ],
+    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
+    "coverage": "United Kingdom",
+    "maturity": "stable",
+    "limitations": "National deprivation indices use different methods and dates. Do not assume their scores are directly comparable. Consult the documentation for any composite UK comparisons.",
+    "links": {
+      "repository": "https://github.com/humaniverse/IMD",
+      "docs": "https://humaniverse.github.io/IMD/",
+      "source": "https://github.com/humaniverse/IMD/blob/master/README.md",
+      "license": "https://github.com/humaniverse/IMD/blob/master/LICENSE"
+    },
+    "keywords": [
+      "IMD",
+      "R"
+    ],
+    "featured": true,
+    "published": true,
+    "reviewedAt": "2026-11-01",
+    "evidence": [
+      "https://github.com/humaniverse/IMD/blob/master/README.md",
+      "https://api.github.com/repos/humaniverse/IMD"
     ]
   },
   {
@@ -65,7 +263,7 @@
       "demographr",
       "R"
     ],
-    "featured": true,
+    "featured": false,
     "published": true,
     "reviewedAt": "2026-11-01",
     "evidence": [
@@ -102,7 +300,7 @@
       "compositr",
       "R"
     ],
-    "featured": true,
+    "featured": false,
     "published": true,
     "reviewedAt": "2026-11-01",
     "evidence": [
@@ -226,43 +424,6 @@
     ]
   },
   {
-    "id": "build-index",
-    "slug": "build-index",
-    "name": "Vulnerability Index Builder",
-    "summary": "Turn your indicator spreadsheet into a composite vulnerability index in your browser.",
-    "description": "Upload Excel or CSV indicator data, group indicators into weighted domains and export scores, ranks and vulnerability bands. The browser app includes a guided wizard and a workspace, with an example dataset to try.",
-    "subjects": [
-      "methods"
-    ],
-    "types": [
-      "app"
-    ],
-    "platforms": [
-      "Web browser"
-    ],
-    "coverage": "Your own area-level data",
-    "maturity": "unknown",
-    "limitations": "Prepare one row per area with matching area codes. Computation happens in your browser. Review missing values, indicator direction, weighting and sensitivity; the tool does not choose appropriate priorities for you.",
-    "links": {
-      "repository": "https://github.com/humaniverse/build-index",
-      "docs": "https://github.com/humaniverse/build-index/blob/main/README.md",
-      "source": "https://github.com/humaniverse/build-index/blob/main/README.md",
-      "app": "https://humaniverse.github.io/build-index/",
-      "license": "https://github.com/humaniverse/build-index/blob/main/LICENSE"
-    },
-    "keywords": [
-      "build-index",
-      "Web browser"
-    ],
-    "featured": true,
-    "published": true,
-    "reviewedAt": "2026-11-01",
-    "evidence": [
-      "https://github.com/humaniverse/build-index/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/build-index"
-    ]
-  },
-  {
     "id": "shinycoin",
     "slug": "shinycoin",
     "name": "shinycoin",
@@ -300,46 +461,6 @@
     "evidence": [
       "https://github.com/humaniverse/shinycoin/blob/main/README.md",
       "https://api.github.com/repos/humaniverse/shinycoin"
-    ]
-  },
-  {
-    "id": "IMD",
-    "slug": "imd",
-    "name": "IMD",
-    "summary": "Access deprivation indices and community needs data for all four UK nations.",
-    "description": "An R package providing Indices of Multiple Deprivation at several geographical levels, Community Needs Index files and selected household deprivation figures. A released version is available on CRAN; data downloads are linked in its README.",
-    "subjects": [
-      "people",
-      "places",
-      "risks"
-    ],
-    "types": [
-      "data-package",
-      "dataset"
-    ],
-    "platforms": [
-      "R"
-    ],
-    "prerequisites": "Requires an R installation and the project’s documented dependencies.",
-    "coverage": "United Kingdom",
-    "maturity": "stable",
-    "limitations": "National deprivation indices use different methods and dates. Do not assume their scores are directly comparable. Consult the documentation for any composite UK comparisons.",
-    "links": {
-      "repository": "https://github.com/humaniverse/IMD",
-      "docs": "https://humaniverse.github.io/IMD/",
-      "source": "https://github.com/humaniverse/IMD/blob/master/README.md",
-      "license": "https://github.com/humaniverse/IMD/blob/master/LICENSE"
-    },
-    "keywords": [
-      "IMD",
-      "R"
-    ],
-    "featured": false,
-    "published": true,
-    "reviewedAt": "2026-11-01",
-    "evidence": [
-      "https://github.com/humaniverse/IMD/blob/master/README.md",
-      "https://api.github.com/repos/humaniverse/IMD"
     ]
   },
   {
@@ -763,86 +884,6 @@
     ]
   },
   {
-    "id": "globalvuln",
-    "slug": "globalvuln",
-    "name": "globalvuln",
-    "summary": "Compare global vulnerability indices and access country-level data in R.",
-    "description": "An R data package and browser explorer bringing together published indices of vulnerability, fragility, development, hunger, health and displacement. The explorer helps compare concepts, coverage and sources.",
-    "subjects": [
-      "risks",
-      "people",
-      "places"
-    ],
-    "types": [
-      "app",
-      "data-package"
-    ],
-    "platforms": [
-      "Web browser",
-      "R for the data package"
-    ],
-    "coverage": "Global; country-level coverage varies by index",
-    "maturity": "development",
-    "limitations": "Original publisher scores retain their scales. No cross-index meta-score is produced; missing coverage must not be read as low vulnerability. Reference periods and reuse terms differ by publisher.",
-    "links": {
-      "repository": "https://github.com/humaniverse/globalvuln",
-      "docs": "https://humaniverse.github.io/globalvuln/",
-      "source": "https://github.com/humaniverse/globalvuln/blob/main/README.md",
-      "app": "https://humaniverse.github.io/globalvuln/indices-explorer.html",
-      "license": "https://github.com/humaniverse/globalvuln/blob/main/LICENSE"
-    },
-    "keywords": [
-      "globalvuln",
-      "Web browser",
-      "R for the data package"
-    ],
-    "featured": false,
-    "published": true,
-    "reviewedAt": "2026-11-01",
-    "evidence": [
-      "https://github.com/humaniverse/globalvuln/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/globalvuln"
-    ]
-  },
-  {
-    "id": "anticipatory-analysis-guide",
-    "slug": "anticipatory-analysis-guide",
-    "name": "Anticipatory analysis field guide",
-    "summary": "Learn and facilitate anticipatory humanitarian analysis.",
-    "description": "An interactive field guide with lessons, a working session and workshop facilitation material. It is based on a method developed by Madeleine Lyons and Barbara Devlieger.",
-    "subjects": [
-      "methods",
-      "risks"
-    ],
-    "types": [
-      "app",
-      "method-toolkit"
-    ],
-    "platforms": [
-      "Web browser"
-    ],
-    "coverage": "Not geography-specific",
-    "maturity": "unknown",
-    "limitations": "Working sessions are stored in your browser; export backups to keep your work. Fictional examples are learning material. The guide supports discussion and does not select priorities automatically.",
-    "links": {
-      "repository": "https://github.com/humaniverse/anticipatory-analysis-guide",
-      "docs": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
-      "source": "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
-      "app": "https://humaniverse.github.io/anticipatory-analysis-guide/"
-    },
-    "keywords": [
-      "anticipatory-analysis-guide",
-      "Web browser"
-    ],
-    "featured": false,
-    "published": true,
-    "reviewedAt": "2026-11-01",
-    "evidence": [
-      "https://github.com/humaniverse/anticipatory-analysis-guide/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/anticipatory-analysis-guide"
-    ]
-  },
-  {
     "id": "healthindexwales",
     "slug": "healthindexwales",
     "name": "Health Index for Wales",
@@ -878,47 +919,6 @@
     "evidence": [
       "https://github.com/humaniverse/healthindexwales/blob/main/README.md",
       "https://api.github.com/repos/humaniverse/healthindexwales"
-    ]
-  },
-  {
-    "id": "deprivation-explorer",
-    "slug": "deprivation-explorer",
-    "name": "Deprivation Explorer",
-    "summary": "Explore the UK’s indices of multiple deprivation in your browser.",
-    "description": "A Shiny app for exploring the UK’s indices of multiple deprivation. Its source repository is available alongside the hosted app.",
-    "subjects": [
-      "people",
-      "places",
-      "risks"
-    ],
-    "types": [
-      "app"
-    ],
-    "platforms": [
-      "Web browser",
-      "R / Shiny for local use"
-    ],
-    "coverage": "United Kingdom",
-    "maturity": "unknown",
-    "limitations": "Check the edition, national methodology and geography shown in the app. Scores from separate national indices are not automatically comparable.",
-    "links": {
-      "repository": "https://github.com/humaniverse/deprivation-explorer",
-      "docs": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
-      "source": "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
-      "app": "https://matthewgthomas.shinyapps.io/deprivation-explorer/",
-      "license": "https://github.com/humaniverse/deprivation-explorer/blob/main/LICENSE"
-    },
-    "keywords": [
-      "deprivation-explorer",
-      "Web browser",
-      "R / Shiny for local use"
-    ],
-    "featured": false,
-    "published": true,
-    "reviewedAt": "2026-11-01",
-    "evidence": [
-      "https://github.com/humaniverse/deprivation-explorer/blob/main/README.md",
-      "https://api.github.com/repos/humaniverse/deprivation-explorer"
     ]
   },
   {
